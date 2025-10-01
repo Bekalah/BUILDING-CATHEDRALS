@@ -1,8 +1,7 @@
 name: Azure SWA Deploy (Local Stub)
-on:
-  workflow_dispatch:
+on: { workflow_dispatch: {} }
 jobs:
   stub:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Azure deployment disabled locally. Restore original from archive to enable real deploys." 
+      - run: echo "Azure SWA deployment disabled locally. Restore from archive for real deployments."

@@ -1,0 +1,54 @@
+name: Azure SWA Deploy Matrix
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/**'
+      - 'packages/**'
+      - 'scripts/auto-fix.js'
+      - 'api/**'
+      - 'resources/azure/**'
+  workflow_dispatch:
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [arcanae-lab, cathedral-of-circuits, stone-grimoire]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Install root dependencies
+        run: |
+          if [ -f package.json ]; then npm ci --no-audit --no-fund; fi
+      - name: Prepare app
+        working-directory: apps/${{ matrix.app }}
+        run: |
+          if [ -f package.json ]; then npm ci --no-audit --no-fund; fi
+          if [ -f package.json ]; then npm run build; fi
+      - name: Select SWA Token
+        id: select_token
+        run: |
+          case "${{ matrix.app }}" in
+            arcanae-lab) echo "token=${{ secrets.SWA_TOKEN_ARCANAE_LAB }}" >> $GITHUB_OUTPUT ;;
+            cathedral-of-circuits) echo "token=${{ secrets.SWA_TOKEN_CATHEDRAL_OF_CIRCUITS }}" >> $GITHUB_OUTPUT ;;
+            stone-grimoire) echo "token=${{ secrets.SWA_TOKEN_STONE_GRIMOIRE }}" >> $GITHUB_OUTPUT ;;
+            *) echo "Unknown app" >&2; exit 1 ;;
+          esac
+      - name: Check SWA token
+        run: |
+          if [ -z "${{ secrets.SWA_TOKEN }}" ]; then echo "Missing SWA_TOKEN secret" >&2; exit 1; fi
+      - name: Deploy to Azure Static Web Apps (App + Functions)
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.SWA_TOKEN }}
+          app_location: apps/${{ matrix.app }}
+          api_location: api
+          output_location: dist
+        env:
+          SKIP_APP_BUILD: true
+          CATHEDRAL_APP_KEY: ${{ matrix.app }}

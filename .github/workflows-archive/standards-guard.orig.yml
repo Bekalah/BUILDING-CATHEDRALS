@@ -1,0 +1,35 @@
+name: Standards Guard
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Run auto-fix dry run
+        run: node scripts/auto-fix.js --dry-run
+      - name: Drift catalog check
+        run: npm run drift:check || true
+      - name: Detect drift
+        run: |
+          node scripts/auto-fix.js
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Standards drift detected after auto-fix run. Commit required." >&2
+            git diff --name-only
+            exit 1
+          fi
+      - name: Integrity manifest
+        run: node scripts/gen-integrity.mjs || true
+      - name: Upload integrity (optional)
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: integrity-latest
+          path: INTEGRITY_MANIFEST.json
+          if-no-files-found: ignore
