@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: '20'
       - name: Install (none needed)
@@ -29,14 +29,14 @@ jobs:
       - name: Run core export
         run: node scripts/export-core.mjs
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: cathedral-core
           path: dist-core
       - name: Generate integrity manifest
         run: node scripts/gen-integrity.mjs
       - name: Upload integrity
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: integrity-manifest
           path: INTEGRITY_MANIFEST.json
