@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": 1,
+  "updated": "2025-10-01T23:04:23.059Z",
+  "azure": {
+    "openai": {
+      "endpoint": "https://your-resource.openai.azure.com/",
+      "deployment": "gpt-4o-mini",
+      "auth": "managed-identity-or-key"
+    }
+  },
+  "apps": [
+    {
+      "name": "arcanae-lab",
+      "swa": "SWA_TOKEN_ARCANAE_LAB",
+      "path": "apps/arcanae-lab"
+    },
+    {
+      "name": "cathedral-of-circuits",
+      "swa": "SWA_TOKEN_CATHEDRAL_OF_CIRCUITS",
+      "path": "apps/cathedral-of-circuits"
+    },
+    {
+      "name": "stone-grimoire",
+      "swa": "SWA_TOKEN_STONE_GRIMOIRE",
+      "path": "apps/stone-grimoire"
+    }
+  ],
+  "notes": [
+    "Replace placeholder tokens with real secret names in GitHub settings.",
+    "Keep this file updated after infra changes to avoid drift."
+  ]
+}

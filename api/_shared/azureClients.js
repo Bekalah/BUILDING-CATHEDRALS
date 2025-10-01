@@ -16,7 +16,6 @@ export function getOpenAIClient() {
   if (process.env.AZURE_OPENAI_KEY) {
     openAIClient = new OpenAIClient(endpoint, new AzureKeyCredential(process.env.AZURE_OPENAI_KEY));
   } else {
-    // Managed Identity / Workload Identity path
     const credential = new DefaultAzureCredential();
     openAIClient = new OpenAIClient(endpoint, credential);
   }
