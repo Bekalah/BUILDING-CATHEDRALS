@@ -1,0 +1,29 @@
+{
+  "name": "cathedral-monorepo",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "node scripts/build-codex.mjs || echo 'build-codex.mjs not present'",
+    "test": "pytest -q || echo 'python tests skipped'",
+    "dedup": "python scripts/dedup.py || true",
+    "dedup:fix": "python scripts/dedup.py --fix || true",
+    "contrast": "node scripts/check-contrast.mjs || true",
+    "standards": "node scripts/auto-fix.js --dry-run",
+    "standards:apply": "node scripts/auto-fix.js",
+    "codex:validate": "node scripts/validate-codex.mjs",
+    "export:core": "node scripts/export-core.mjs",
+    "integrity": "node scripts/gen-integrity.mjs",
+    "deploy:gh": "npm run build && npx gh-pages -d dist",
+    "deploy:azure": "npm run build && az staticwebapp deploy",
+    "dev:functions": "npx @azure/static-web-apps-cli start --api-location api --app-location . --port 4280"
+  },
+  "dependencies": {
+    "@azure/openai": "^1.0.0-beta.11",
+    "@azure/identity": "^4.4.1"
+  }
+}

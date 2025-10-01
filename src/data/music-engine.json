@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Harmonic Music Generation Engine for Cathedral of Circuits",
+    "totalPresets": 10,
+    "standards": "ND-safe, therapeutic, generative"
+  },
+  "harmonicPresets": {
+    "lunar-harmonics": {
+      "id": "lunar-harmonics",
+      "name": "Moonchild's Lunar Cycles",
+      "codexNode": "C144N-001",
+      "baseTone": "C4",
+      "scale": "aeolian",
+      "tempo": 60,
+      "instruments": ["crystal-bowls", "soft-synth", "water-chimes"],
+      "pattern": "cyclic-phases",
+      "mood": "meditative-transformative",
+      "therapeutic": {
+        "focuses": ["trauma-healing", "creative-blocks", "emotional-release"],
+        "contraindications": ["high-anxiety", "mania"],
+        "duration": "15-30 minutes"
+      },
+      "frequencies": {
+        "solfeggio": [396, 417, 528, 639, 741, 852],
+        "binaural": { "carrier": 136.1, "offset": 4 },
+        "chakra": { "sacral": 417, "solar-plexus": 528 }
+      }
+    },
+    "manifestation-tones": {
+      "id": "manifestation-tones",
+      "name": "The Magician's Will",
+      "codexNode": "C144N-002",
+      "baseTone": "E4",
+      "scale": "lydian",
+      "tempo": 80,
+      "instruments": ["deep-bass", "brass-choir", "celestial-harp"],
+      "pattern": "ascending-build",
+      "mood": "empowering-focused",
+      "therapeutic": {
+        "focuses": ["manifestation", "willpower", "confidence"],
+        "contraindications": ["aggression", "domination"],
+        "duration": "20-45 minutes"
+      },
+      "frequencies": {
+        "solfeggio": [528, 639, 741, 852],
+        "binaural": { "carrier": 432, "offset": 8 },
+        "chakra": { "solar-plexus": 528, "throat": 741 }
+      }
+    },
+    "intuitive-harmonies": {
+      "id": "intuitive-harmonies",
+      "name": "High Priestess Wisdom",
+      "codexNode": "C144N-003",
+      "baseTone": "G4",
+      "scale": "dorian",
+      "tempo": 50,
+      "instruments": ["ethereal-voices", "wisdom-bells", "deep-ambience"],
+      "pattern": "flowing-intuition",
+      "mood": "wise-contemplative",
+      "therapeutic": {
+        "focuses": ["intuition", "inner-wisdom", "decision-making"],
+        "contraindications": ["paranoia", "delusion"],
+        "duration": "25-40 minutes"
+      },
+      "frequencies": {
+        "solfeggio": [417, 528, 639, 741],
+        "binaural": { "carrier": 40, "offset": 2 },
+        "chakra": { "third-eye": 852, "crown": 963 }
+      }
+    },
+    "primal-tones": {
+      "id": "primal-tones",
+      "name": "Dragon's Earth Power",
+      "codexNode": "C144N-004",
+      "baseTone": "F#3",
+      "scale": "phrygian",
+      "tempo": 70,
+      "instruments": ["earth-drums", "didgeridoo", "bone-flutes"],
+      "pattern": "grounding-pulse",
+      "mood": "grounded-powerful",
+      "therapeutic": {
+        "focuses": ["grounding", "protection", "primal-energy"],
+        "contraindications": ["anxiety", "panic"],
+        "duration": "30-60 minutes"
+      },
+      "frequencies": {
+        "solfeggio": [396, 528, 639],
+        "binaural": { "carrier": 7.83, "offset": 1 },
+        "chakra": { "root": 396, "sacral": 417 }
+      }
+    },
+    "crystal-tones": {
+      "id": "crystal-tones",
+      "name": "Crystal Lattice Memory",
+      "codexNode": "C144N-005",
+      "baseTone": "A2",
+      "scale": "harmonic-minor",
+      "tempo": 55,
+      "instruments": ["crystal-bowls", "metal-chimes", "pure-tones"],
+      "pattern": "lattice-resonance",
+      "mood": "clear-structured",
+      "therapeutic": {
+        "focuses": ["memory", "clarity", "structure"],
+        "contraindications": ["confusion", "disorientation"],
+        "duration": "20-35 minutes"
+      },
+      "frequencies": {
+        "solfeggio": [417, 528, 639, 741, 852],
+        "binaural": { "carrier": 111, "offset": 3 },
+        "chakra": { "root": 396, "crown": 963 }
+      }
+    }
+  },
+  "toneMappings": {
+    "C4": {
+      "note": "C4",
+      "frequency": 261.63,
+      "chakra": "root",
+      "element": "earth",
+      "emotion": "grounded-security"
+    },
+    "E4": {
+      "note": "E4",
+      "frequency": 329.63,
+      "chakra": "solar-plexus",
+      "element": "fire",
+      "emotion": "personal-power"
+    },
+    "G4": {
+      "note": "G4",
+      "frequency": 392.00,
+      "chakra": "throat",
+      "element": "ether",
+      "emotion": "clear-communication"
+    },
+    "F#3": {
+      "note": "F#3",
+      "frequency": 185.00,
+      "chakra": "root",
+      "element": "earth",
+      "emotion": "deep-strength"
+    },
+    "A2": {
+      "note": "A2",
+      "frequency": 110.00,
+      "chakra": "root",
+      "element": "earth",
+      "emotion": "foundational-stability"
+    }
+  },
+  "solfeggioFrequencies": {
+    "396": {
+      "name": "Liberation from Guilt and Fear",
+      "purpose": "Turn grief into joy, liberate from guilt and fear",
+      "chakra": "root"
+    },
+    "417": {
+      "name": "Facilitating Change",
+      "purpose": "Undo situations and facilitate change",
+      "chakra": "sacral"
+    },
+    "528": {
+      "name": "Transformation and Miracles",
+      "purpose": "Repair DNA, bring transformation and miracles",
+      "chakra": "solar-plexus"
+    },
+    "639": {
+      "name": "Connecting Relationships",
+      "purpose": "Heal relationships, enhance communication",
+      "chakra": "heart"
+    },
+    "741": {
+      "name": "Awakening Intuition",
+      "purpose": "Lead to a healthier, simpler life, awaken intuition",
+      "chakra": "throat"
+    },
+    "852": {
+      "name": "Returning to Spiritual Order",
+      "purpose": "Raise awareness, return to spiritual order",
+      "chakra": "third-eye"
+    }
+  },
+  "binauralPrograms": {
+    "trauma-healing": {
+      "carrier": 136.1,
+      "offset": 4,
+      "duration": "20 minutes",
+      "purpose": "Deep relaxation and trauma processing"
+    },
+    "creative-flow": {
+      "carrier": 40,
+      "offset": 2,
+      "duration": "30 minutes",
+      "purpose": "Enhanced creativity and flow state"
+    },
+    "manifestation": {
+      "carrier": 432,
+      "offset": 8,
+      "duration": "25 minutes",
+      "purpose": "Focused intention and manifestation"
+    }
+  }
+}

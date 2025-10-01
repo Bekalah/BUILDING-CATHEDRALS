@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmogenesis Cathedral</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Sacred Geometry Ratios */
+            --phi: 1.618034;
+            --sacred-3: 3;
+            --sacred-6: 6;
+            --sacred-9: 9;
+            --sacred-12: 12;
+            
+            /* Spectral Palette - OKLab perceptual */
+            --ultramarine: color(display-p3 0.15 0.25 0.75);
+            --gold-leaf: color(display-p3 0.85 0.72 0.35);
+            --verdigris: color(display-p3 0.25 0.55 0.45);
+            --cinnabar: color(display-p3 0.85 0.25 0.20);
+            --lapis: color(display-p3 0.20 0.35 0.65);
+            --gesso: color(display-p3 0.98 0.98 0.95);
+            --umbra: color(display-p3 0.25 0.18 0.12);
+            
+            /* Fallbacks for non-P3 displays */
+            --ultramarine-srgb: #2644bf;
+            --gold-leaf-srgb: #d9b85a;
+            --verdigris-srgb: #408c73;
+            --cinnabar-srgb: #d94033;
+            --lapis-srgb: #335aa6;
+            --gesso-srgb: #fafaf2;
+            --umbra-srgb: #402e1f;
+            
+            /* Temple Architecture */
+            --temple-margin: calc(100vw / var(--sacred-12));
+            --golden-width: calc(100vw / var(--phi));
+            --sacred-gap: calc(1rem * var(--phi));
+            
+            /* Typography - Sacred Proportions */
+            --font-cathedral: 'Optima', 'Candara', 'Georgia', serif;
+            --font-codex: 'Avenir', 'Montserrat', -apple-system, sans-serif;
+            --scale-ratio: 1.25;
+            --text-xs: calc(1rem / var(--scale-ratio) / var(--scale-ratio));
+            --text-sm: calc(1rem / var(--scale-ratio));
+            --text-base: 1rem;
+            --text-lg: calc(1rem * var(--scale-ratio));
+            --text-xl: calc(1rem * var(--scale-ratio) * var(--scale-ratio));
+            --text-2xl: calc(1rem * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio));
+        }
+
+        @supports (color: color(display-p3 1 1 1)) {
+            :root {
+                --color-ultramarine: var(--ultramarine);
+                --color-gold: var(--gold-leaf);
+                --color-verdigris: var(--verdigris);
+                --color-cinnabar: var(--cinnabar);
+                --color-lapis: var(--lapis);
+                --color-gesso: var(--gesso);
+                --color-umbra: var(--umbra);
+            }
+        }
+
+        @supports not (color: color(display-p3 1 1 1)) {
+            :root {
+                --color-ultramarine: var(--ultramarine-srgb);
+                --color-gold: var(--gold-leaf-srgb);
+                --color-verdigris: var(--verdigris-srgb);
+                --color-cinnabar: var(--cinnabar-srgb);
+                --color-lapis: var(--lapis-srgb);
+                --color-gesso: var(--gesso-srgb);
+                --color-umbra: var(--umbra-srgb);
+            }
+        }
+
+        body {
+            font-family: var(--font-codex);
+            background: linear-gradient(135deg, var(--color-umbra) 0%, #000 50%, var(--color-umbra) 100%);
+            color: var(--color-gesso);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body.allow-motion {
+            --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body:not(.allow-motion) {
+            --transition-base: 0s;
+        }
+
+        /* Sacred Glow Effect */
+        @keyframes sacred-pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+
+        .cathedral-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(180deg, 
+                rgba(0,0,0,0.95) 0%, 
+                rgba(0,0,0,0.8) 50%,
+                rgba(0,0,0,0) 100%);
+            padding: 1.5rem 2rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cathedral-title {
+            font-family: var(--font-cathedral);
+            font-size: var(--text-2xl);
+            background: linear-gradient(90deg, var(--color-gold) 0%, var(--color-gesso) 50%, var(--color-gold) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.05em;
+            font-weight: 300;
+        }
+
+        .realm-selector {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .realm-btn {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--color-gesso);
+            padding: 0.5rem 1.5rem;
+            border-radius: 999px;
+            font-size: var(--text-sm);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            backdrop-filter: blur(5px);
+            font-family: var(--font-codex);
+            letter-spacing: 0.02em;
+        }
+
+        .realm-btn:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--color-gold);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(217,184,90,0.2);
+        }
+
+        .realm-btn.active {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-cinnabar));
+            color: white;
+            border-color: transparent;
+        }
+
+        .main-stage {
+            margin-top: 100px;
+            padding: 2rem;
+            min-height: calc(100vh - 100px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Sacred Lattice Grid */
+        .crystal-lattice {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2px;
+            max-width: 1400px;
+            width: 100%;
+            padding: 2rem;
+            background: radial-gradient(ellipse at center, 
+                rgba(255,255,255,0.02) 0%, 
+                transparent 70%);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .lattice-node {
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, 
+                rgba(255,255,255,0.03) 0%, 
+                rgba(255,255,255,0.01) 100%);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lattice-node::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, 
+                var(--node-color, var(--color-lapis)) 0%, 
+                transparent 70%);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .lattice-node:hover::before {
+            opacity: 0.3;
+        }
+
+        .lattice-node.active {
+            background: linear-gradient(135deg, 
+                rgba(217,184,90,0.1) 0%, 
+                rgba(217,184,90,0.05) 100%);
+            border-color: var(--color-gold);
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(217,184,90,0.3);
+        }
+
+        .node-glyph {
+            font-size: var(--text-xs);
+            opacity: 0.6;
+            font-family: var(--font-cathedral);
+            transition: opacity var(--transition-base);
+        }
+
+        .lattice-node:hover .node-glyph {
+            opacity: 1;
+        }
+
+        /* Sacred Canvas */
+        .render-chamber {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90vw;
+            max-width: 1200px;
+            height: 80vh;
+            background: rgba(0,0,0,0.95);
+            border: 1px solid rgba(217,184,90,0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            display: none;
+            flex-direction: column;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 2000;
+        }
+
+        .render-chamber.active {
+            display: flex;
+        }
+
+        .chamber-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .chamber-title {
+            font-family: var(--font-cathedral);
+            font-size: var(--text-xl);
+            color: var(--color-gold);
+            letter-spacing: 0.03em;
+        }
+
+        .chamber-modes {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .mode-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--color-gesso);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: var(--text-sm);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-family: var(--font-codex);
+        }
+
+        .mode-btn.active {
+            background: var(--color-lapis);
+            border-color: var(--color-lapis);
+        }
+
+        .render-canvas {
+            flex: 1;
+            background: radial-gradient(ellipse at center, 
+                rgba(255,255,255,0.02) 0%, 
+                transparent 50%);
+            border-radius: 8px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #sacredCanvas {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 4px;
+        }
+
+        .chamber-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            margin-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .annex-data {
+            font-size: var(--text-xs);
+            opacity: 0.7;
+            font-family: var(--font-codex);
+            display: flex;
+            gap: 2rem;
+        }
+
+        .annex-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .annex-label {
+            opacity: 0.5;
+            margin-bottom: 0.2rem;
+        }
+
+        .export-controls {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .export-btn {
+            background: linear-gradient(135deg, var(--color-verdigris), var(--color-lapis));
+            border: none;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-size: var(--text-sm);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-family: var(--font-codex);
+            letter-spacing: 0.02em;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(64,140,115,0.3);
+        }
+
+        .close-chamber {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--color-gesso);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-size: var(--text-sm);
+        }
+
+        .close-chamber:hover {
+            background: rgba(255,255,255,0.15);
+        }
+
+        /* Sacred Geometry Overlay */
+        .geometry-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.05;
+        }
+
+        /* Responsive Sacred Proportions */
+        @media (max-width: 768px) {
+            .crystal-lattice {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            
+            .realm-selector {
+                flex-wrap: wrap;
+            }
+            
+            .cathedral-title {
+                font-size: var(--text-xl);
+            }
+        }
+
+        /* Print Export Styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .cathedral-header,
+            .export-controls {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sacred Geometry Background -->
+    <svg class="geometry-overlay" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <pattern id="sacred-grid" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(217,184,90,0.1)" stroke-width="0.5"/>
+                <path d="M50,2 L98,50 L50,98 L2,50 Z" fill="none" stroke="rgba(217,184,90,0.05)" stroke-width="0.5"/>
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#sacred-grid)"/>
+    </svg>
+
+    <!-- Cathedral Header -->
+    <header class="cathedral-header">
+        <div class="header-content">
+            <h1 class="cathedral-title">⟡ COSMOGENESIS CATHEDRAL ⟡</h1>
+            <div class="realm-selector">
+                <button class="realm-btn active" data-realm="vienna">Vienna House</button>
+                <button class="realm-btn" data-realm="avalon">Avalon Forest</button>
+                <button class="realm-btn" data-realm="tesla">Tesla Laboratory</button>
+                <button class="realm-btn" data-realm="jung">Jung's Tower</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Stage -->
+    <main class="main-stage">
+        <!-- 144 Node Crystal Lattice -->
+        <div class="crystal-lattice" id="crystalLattice">
+            <!-- Nodes will be generated here -->
+        </div>
+
+        <!-- Render Chamber (Modal) -->
+        <div class="render-chamber" id="renderChamber">
+            <div class="chamber-header">
+                <h2 class="chamber-title" id="chamberTitle">Node C144N-001</h2>
+                <div class="chamber-modes">
+                    <button class="mode-btn active" data-mode="art">Art</button>
+                    <button class="mode-btn" data-mode="music">Music</button>
+                    <button class="mode-btn" data-mode="story">Story</button>
+                    <button class="mode-btn" data-mode="research">Research</button>
+                </div>
+            </div>
+            
+            <div class="render-canvas">
+                <canvas id="sacredCanvas" width="800" height="600"></canvas>
+            </div>
+            
+            <div class="chamber-footer">
+                <div class="annex-data">
+                    <div class="annex-item">
+                        <span class="annex-label">Frequency</span>
+                        <span id="nodeFreq">432 Hz</span>
+                    </div>
+                    <div class="annex-item">
+                        <span class="annex-label">Geometry</span>
+                        <span id="nodeGeometry">Rose + Harmonograph</span>
+                    </div>
+                    <div class="annex-item">
+                        <span class="annex-label">Pigments</span>
+                        <span id="nodePigments">Ultramarine + Gold</span>
+                    </div>
+                </div>
+                
+                <div class="export-controls">
+                    <button class="export-btn" onclick="exportSVG()">Export SVG</button>
+                    <button class="export-btn" onclick="exportResearch()">Export Research</button>
+                    <button class="close-chamber" onclick="closeChamber()">Close</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Sacred Constants
+        const PHI = 1.618034;
+        const SACRED_144 = 144;
+        const SACRED_99 = 99;
+        
+        // Color Space Detection
+        const hasP3Support = CSS.supports('color', 'color(display-p3 1 1 1)');
+        console.log('Display P3 Support:', hasP3Support);
+        
+        // Motion Preference Detection
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!prefersReducedMotion) {
+            document.body.classList.add('allow-motion');
+        }
+
+        // Node Data Structure (simplified demo)
+        const nodeArchetypes = {
+            'vienna': {
+                baseFreq: 432,
+                pigments: ['ultramarine', 'gold_ochre', 'vermillion'],
+                geometries: ['rose', 'harmonograph', 'villard'],
+                archetypes: ['Magician', 'Empress', 'Hierophant']
+            },
+            'avalon': {
+                baseFreq: 528,
+                pigments: ['verdigris', 'lapis', 'gesso'],
+                geometries: ['tree-rings', 'phyllotaxis', 'tree-of-life'],
+                archetypes: ['High Priestess', 'Hermit', 'Star']
+            },
+            'tesla': {
+                baseFreq: 369,
+                pigments: ['cinnabar', 'ultramarine', 'silver'],
+                geometries: ['lissajous', 'spirograph', 'julia'],
+                archetypes: ['Magician', 'Tower', 'Wheel']
+            },
+            'jung': {
+                baseFreq: 396,
+                pigments: ['umbra', 'ochre_yellow', 'crimson'],
+                geometries: ['mandala', 'rose', 'enneagram'],
+                archetypes: ['Fool', 'World', 'Sun']
+            }
+        };
+
+        // Generate Crystal Lattice
+        function generateLattice() {
+            const lattice = document.getElementById('crystalLattice');
+            lattice.innerHTML = '';
+            
+            for (let i = 0; i < SACRED_144; i++) {
+                const node = document.createElement('div');
+                node.className = 'lattice-node';
+                node.dataset.nodeId = `C144N-${String(i + 1).padStart(3, '0')}`;
+                
+                // Assign color based on position in sacred geometry
+                const hue = (i * PHI * 137.5) % 360;
+                node.style.setProperty('--node-color', `hsl(${hue}, 40%, 50%)`);
+                
+                // Add glyph (simplified - would be actual symbols)
+                const glyph = document.createElement('span');
+                glyph.className = 'node-glyph';
+                glyph.textContent = String.fromCharCode(0x2600 + (i % 32)); // Various Unicode symbols
+                node.appendChild(glyph);
+                
+                node.addEventListener('click', () => openNode(node.dataset.nodeId));
+                lattice.appendChild(node);
+            }
+        }
+
+        // Sacred Geometry Drawing Functions
+        function drawRose(ctx, k = 7, scale = 200) {
+            ctx.save();
+            ctx.translate(ctx.canvas.width / 2, ctx.canvas.height / 2);
+            ctx.strokeStyle = hasP3Support ? 
+                'color(display-p3 0.85 0.72 0.35 / 0.8)' : 
+                'rgba(217, 184, 90, 0.8)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            
+            for (let theta = 0; theta < Math.PI * 2; theta += 0.01) {
+                const r = scale * Math.cos(k * theta);
+                const x = r * Math.cos(theta);
+                const y = r * Math.sin(theta);
+                if (theta === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            }
+            
+            ctx.stroke();
+            ctx.restore();
+        }
+
+        function drawHarmonograph(ctx, complexity = 6, harmonics = 0.42, scale = 180) {
+            ctx.save();
+            ctx.translate(ctx.canvas.width / 2, ctx.canvas.height / 2);
+            ctx.strokeStyle = hasP3Support ? 
+                'color(display-p3 0.20 0.35 0.65 / 0.6)' : 
+                'rgba(51, 90, 166, 0.6)';
+            ctx.lineWidth = 0.5;
+            ctx.beginPath();
+            
+            for (let t = 0; t < 100; t += 0.01) {
+                const x = scale * Math.sin(t + harmonics) * Math.exp(-t * 0.01);
+                const y = scale * Math.sin(t * complexity / 4) * Math.exp(-t * 0.01);
+                if (t === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            }
+            
+            ctx.stroke();
+            ctx.restore();
+        }
+
+        function drawPhyllotaxis(ctx, n = 500, scale = 3) {
+            ctx.save();
+            ctx.translate(ctx.canvas.width / 2, ctx.canvas.height / 2);
+            ctx.fillStyle = hasP3Support ? 
+                'color(display-p3 0.25 0.55 0.45 / 0.3)' : 
+                'rgba(64, 140, 115, 0.3)';
+            
+            for (let i = 0; i < n; i++) {
+                const theta = i * PHI * 2 * Math.PI;
+                const r = scale * Math.sqrt(i);
+                const x = r * Math.cos(theta);
+                const y = r * Math.sin(theta);
+                
+                ctx.beginPath();
+                ctx.arc(x, y, 2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            
+            ctx.restore();
+        }
+
+        // Open Node in Render Chamber
+        function openNode(nodeId) {
+            const chamber = document.getElementById('renderChamber');
+            const canvas = document.getElementById('sacredCanvas');
+            const ctx = canvas.getContext('2d');
+            const currentRealm = document.querySelector('.realm-btn.active').dataset.realm;
+            const realmData = nodeArchetypes[currentRealm];
+            
+            // Update chamber title
+            document.getElementById('chamberTitle').textContent = `${nodeId} - ${currentRealm.toUpperCase()}`;
+            
+            // Update annex data
+            const nodeIndex = parseInt(nodeId.split('-')[1]) - 1;
+            const freq = realmData.baseFreq * (1 + (nodeIndex % 9) / 9);
+            document.getElementById('nodeFreq').textContent = `${freq.toFixed(1)} Hz`;
+            document.getElementById('nodeGeometry').textContent = 
+                realmData.geometries[nodeIndex % realmData.geometries.length];
+            document.getElementById('nodePigments').textContent = 
+                realmData.pigments[nodeIndex % realmData.pigments.length];
+            
+            // Clear and render sacred geometry
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Background gradient
+            const gradient = ctx.createRadialGradient(
+                canvas.width / 2, canvas.height / 2, 0,
+                canvas.width / 2, canvas.height / 2, canvas.width / 2
+            );
+            gradient.addColorStop(0, 'rgba(0, 0, 0, 0.9)');
+            gradient.addColorStop(1, 'rgba(0, 0, 0, 1)');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw sacred geometry based on realm
+            if (currentRealm === 'vienna' || currentRealm === 'jung') {
+                drawRose(ctx, 7 + (nodeIndex % 5), 150);
+                drawHarmonograph(ctx, 5 + (nodeIndex % 3), 0.3 + (nodeIndex % 10) * 0.05, 140);
+            } else if (currentRealm === 'avalon') {
+                drawPhyllotaxis(ctx, 300 + nodeIndex * 10, 2.5);
+                drawRose(ctx, 8, 120);
+            } else if (currentRealm === 'tesla') {
+                drawHarmonograph(ctx, 7, 0.369, 160);
+                drawPhyllotaxis(ctx, 200, 3);
+            }
+            
+            // Show chamber
+            chamber.classList.add('active');
+            
+            // Mark node as active
+            document.querySelectorAll('.lattice-node').forEach(n => n.classList.remove('active'));
+            document.querySelector(`[data-node-id="${nodeId}"]`).classList.add('active');
+        }
+
+        // Close Render Chamber
+        function closeChamber() {
+            document.getElementById('renderChamber').classList.remove('active');
+            document.querySelectorAll('.lattice-node').forEach(n => n.classList.remove('active'));
+        }
+
+        // Export Functions
+        function exportSVG() {
+            const canvas = document.getElementById('sacredCanvas');
+            const nodeId = document.getElementById('chamberTitle').textContent.split(' - ')[0];
+            const realm = document.getElementById('chamberTitle').textContent.split(' - ')[1];
+            
+            // Create SVG with metadata
+            const svgContent = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="${canvas.width}" height="${canvas.height}">
+    <metadata>
+        <cosmogenesis:export>
+            <node>${nodeId}</node>
+            <realm>${realm}</realm>
+            <timestamp>${new Date().toISOString()}</timestamp>
+            <frequency>${document.getElementById('nodeFreq').textContent}</frequency>
+            <geometry>${document.getElementById('nodeGeometry').textContent}</geometry>
+            <pigments>${document.getElementById('nodePigments').textContent}</pigments>
+            <colorSpace>${hasP3Support ? 'Display-P3' : 'sRGB'}</colorSpace>
+            <license>CC BY-NC 4.0</license>
+        </cosmogenesis:export>
+    </metadata>
+    <!-- Canvas content would be converted to SVG paths here -->
+    <rect width="100%" height="100%" fill="black"/>
+    <text x="50%" y="50%" text-anchor="middle" fill="gold" font-family="Georgia" font-size="24">
+        ${nodeId}
+    </text>
+</svg>`;
+            
+            downloadFile(svgContent, `${nodeId}-${Date.now()}.svg`, 'image/svg+xml');
+        }
+
+        function exportResearch() {
+            const nodeId = document.getElementById('chamberTitle').textContent.split(' - ')[0];
+            const realm = document.getElementById('chamberTitle').textContent.split(' - ')[1];
+            
+            const researchData = {
+                meta: {
+                    bundle_id: `COSMOS-${nodeId}-${Date.now()}`,
+                    created_utc: new Date().toISOString(),
+                    software: {
+                        app: "cosmogenesis-cathedral",
+                        version: "1.0.0",
+                        modules: ["sacred-geometry", "spectral-color", "harmonic-audio"]
+                    },
+                    color: {
+                        space: hasP3Support ? "Display-P3

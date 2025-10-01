@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Generative Art Engine for Cathedral of Circuits",
+    "totalGenerators": 8,
+    "standards": "ND-safe, therapeutic, fractal-based"
+  },
+  "artGenerators": {
+    "fractal-moon-phases": {
+      "id": "fractal-moon-phases",
+      "name": "Moonchild's Lunar Fractals",
+      "codexNode": "C144N-001",
+      "type": "fractal-mandelbulb",
+      "style": "organic-flowing",
+      "colors": ["#2EA66F", "#EDEBE6", "#C7323B", "#F2CB3D"],
+      "parameters": {
+        "iterations": 12,
+        "power": 8,
+        "scale": 2.5,
+        "phase": "lunar-cycle"
+      },
+      "therapeutic": {
+        "focuses": ["creative-blocks", "emotional-cycles", "transformation"],
+        "motion": "gentle-pulse",
+        "duration": "10-20 minutes"
+      },
+      "outputs": ["fractal-artwork", "animation-gif", "print-pattern"]
+    },
+    "geometric-temples": {
+      "id": "geometric-temples",
+      "name": "The Magician's Sacred Architecture",
+      "codexNode": "C144N-002",
+      "type": "sacred-geometry",
+      "style": "precise-structural",
+      "colors": ["#FFD700", "#4A90E2", "#9370DB", "#2C6ABF"],
+      "parameters": {
+        "geometry": "platonic-solids",
+        "proportions": "golden-ratio",
+        "symmetry": "octagonal",
+        "complexity": "moderate"
+      },
+      "therapeutic": {
+        "focuses": ["focus", "structure", "manifestation"],
+        "motion": "steady-rotation",
+        "duration": "15-25 minutes"
+      },
+      "outputs": ["geometric-design", "3d-model", "blueprint"]
+    },
+    "wisdom-glyphs": {
+      "id": "wisdom-glyphs",
+      "name": "High Priestess Knowledge Patterns",
+      "codexNode": "C144N-003",
+      "type": "symbolic-glyphs",
+      "style": "mystical-ancient",
+      "colors": ["#9370DB", "#E987A9", "#3BC6B8", "#7A4BD9"],
+      "parameters": {
+        "symbols": "hermetic-alchemical",
+        "arrangement": "vesica-piscis",
+        "opacity": "layered-transparent",
+        "meaning": "wisdom-integration"
+      },
+      "therapeutic": {
+        "focuses": ["insight", "understanding", "knowledge-integration"],
+        "motion": "subtle-glow",
+        "duration": "20-30 minutes"
+      },
+      "outputs": ["symbolic-art", "meditation-mandala", "wisdom-scroll"]
+    },
+    "dragon-fractals": {
+      "id": "dragon-fractals",
+      "name": "Dragon's Biogeometric Patterns",
+      "codexNode": "C144N-004",
+      "type": "l-system-dragon",
+      "style": "organic-powerful",
+      "colors": ["#2EA66F", "#1FA582", "#3BC6B8", "#E77A2E"],
+      "parameters": {
+        "iterations": 15,
+        "angle": "golden-angle",
+        "growth": "exponential",
+        "texture": "organic-scales"
+      },
+      "therapeutic": {
+        "focuses": ["protection", "grounding", "primal-energy"],
+        "motion": "flowing-growth",
+        "duration": "25-40 minutes"
+      },
+      "outputs": ["dragon-artwork", "biogeometric-pattern", "protection-sigil"]
+    },
+    "crystal-patterns": {
+      "id": "crystal-patterns",
+      "name": "Crystal Lattice Intelligence",
+      "codexNode": "C144N-005",
+      "type": "crystal-grid",
+      "style": "precise-crystalline",
+      "colors": ["#EDEBE6", "#F4F0EA", "#D8A46C", "#9CC8F6"],
+      "parameters": {
+        "lattice": "hexagonal",
+        "symmetry": "perfect",
+        "refraction": "rainbow-prism",
+        "memory": "pattern-storage"
+      },
+      "therapeutic": {
+        "focuses": ["clarity", "memory", "structure"],
+        "motion": "crystalline-glow",
+        "duration": "15-25 minutes"
+      },
+      "outputs": ["crystal-artwork", "lattice-diagram", "memory-crystal"]
+    }
+  },
+  "colorPalettes": {
+    "tara-21": {
+      "name": "TARA-21 ND-Safe Palette",
+      "description": "Neurologically safe colors for trauma-aware art",
+      "colors": {
+        "green": "#2EA66F",
+        "white": "#EDEBE6",
+        "red": "#C7323B",
+        "yellow": "#F2CB3D",
+        "blue": "#2C6ABF",
+        "black": "#1A1C22",
+        "violet": "#7A4BD9",
+        "orange": "#E77A2E",
+        "pink": "#E987A9",
+        "turquoise": "#3BC6B8",
+        "jade": "#1FA582",
+        "pearl": "#F4F0EA",
+        "saffron": "#F39B1A",
+        "indigo": "#3D2E7A",
+        "teal": "#1F8C86",
+        "crimson": "#8E0E2B",
+        "rosegold": "#D8A46C",
+        "sky": "#9CC8F6",
+        "obsidian": "#111418"
+      },
+      "usage": "All colors tested for ND safety and trauma awareness"
+    },
+    "fractal-vibrant": {
+      "name": "Fractal Vibrant",
+      "description": "High-contrast colors for fractal visualization",
+      "colors": {
+        "primary": "#FFD700",
+        "secondary": "#4A90E2",
+        "accent": "#FF69B4",
+        "background": "#0a0e17"
+      }
+    },
+    "meditative-muted": {
+      "name": "Meditative Muted",
+      "description": "Soft, calming colors for therapeutic work",
+      "colors": {
+        "primary": "#EDEBE6",
+        "secondary": "#9370DB",
+        "accent": "#2EA66F",
+        "background": "#1A1C22"
+      }
+    }
+  },
+  "fractalAlgorithms": {
+    "mandelbulb": {
+      "name": "Mandelbulb 3D",
+      "description": "3D extension of Mandelbrot set",
+      "parameters": {
+        "power": 8,
+        "iterations": 12,
+        "bailout": 4,
+        "coloring": "distance-estimation"
+      },
+      "therapeutic": "Good for focus and manifestation work"
+    },
+    "julia-set": {
+      "name": "Julia Set",
+      "description": "Fractal generated from complex number iteration",
+      "parameters": {
+        "constant": "0.285 + 0.01i",
+        "iterations": 15,
+        "escape": 2,
+        "coloring": "smooth"
+      },
+      "therapeutic": "Good for intuition and pattern recognition"
+    },
+    "l-system": {
+      "name": "L-System Fractals",
+      "description": "Growth-based fractal systems",
+      "parameters": {
+        "axiom": "F",
+        "rules": "F -> F+F--F+F",
+        "angle": 60,
+        "iterations": 6
+      },
+      "therapeutic": "Good for grounding and natural growth"
+    },
+    "vesica-piscis": {
+      "name": "Vesica Piscis",
+      "description": "Sacred geometric intersection of circles",
+      "parameters": {
+        "circles": 2,
+        "intersection": "lens-shaped",
+        "proportions": "golden-ratio"
+      },
+      "therapeutic": "Good for balance and sacred space"
+    }
+  },
+  "outputFormats": {
+    "fractal-artwork": {
+      "type": "static-image",
+      "formats": ["PNG", "SVG", "WEBP"],
+      "sizes": ["1024x1024", "2048x2048", "4096x4096"],
+      "uses": ["print", "digital-display", "meditation-focus"]
+    },
+    "animation-gif": {
+      "type": "animated",
+      "formats": ["GIF", "WEBP"],
+      "frameRate": 12,
+      "duration": "10-30 seconds",
+      "uses": ["background", "installation", "therapy-session"]
+    },
+    "print-pattern": {
+      "type": "vector",
+      "formats": ["SVG", "PDF"],
+      "resolution": "300 DPI",
+      "uses": ["textile", "tattoo", "architectural"]
+    }
+  }
+}

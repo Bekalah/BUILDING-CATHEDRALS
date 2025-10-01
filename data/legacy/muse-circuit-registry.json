@@ -1,0 +1,239 @@
+// registry/inspirations/psyche.json
+{
+  "domain": "psyche",
+  "description": "Psychological pioneers and depth explorers",
+  "nodes": [
+    {
+      "id": "jung_shadow",
+      "name": "Shadow Archetype",
+      "lineage": "Jungian Psychology",
+      "domain": "psyche",
+      "keywords": ["integration", "projection", "self", "unconscious"],
+      "quote": "Until you make the unconscious conscious, it will direct your life and you will call it fate.",
+      "mode": ["mind", "soul"],
+      "color": "#2E2B5F",
+      "geometry": "circle",
+      "sound": "low C drone",
+      "weight": 0.9
+    },
+    {
+      "id": "james_varieties",
+      "name": "Varieties of Experience",
+      "lineage": "William James",
+      "domain": "psyche",
+      "keywords": ["religious experience", "consciousness", "pragmatism"],
+      "quote": "The ultimate test for us of what a truth means is the conduct it dictates or inspires.",
+      "mode": ["mind", "soul"],
+      "color": "#4A5568",
+      "geometry": "spiral",
+      "sound": "fifth harmonic",
+      "weight": 0.8
+    },
+    {
+      "id": "wilber_integral",
+      "name": "Integral Theory",
+      "lineage": "Ken Wilber",
+      "domain": "psyche",
+      "keywords": ["integral", "holons", "quadrants", "evolution"],
+      "quote": "The integral vision involves seeing that the world is a communion of subjects, not a collection of objects.",
+      "mode": ["mind", "soul", "tech"],
+      "color": "#805AD5",
+      "geometry": "holon",
+      "sound": "ascending octaves",
+      "weight": 0.7
+    },
+    {
+      "id": "grof_holotropic",
+      "name": "Holotropic States",
+      "lineage": "Stanislav Grof",
+      "domain": "psyche",
+      "keywords": ["transpersonal", "holotropic", "perinatal", "consciousness"],
+      "quote": "Modern consciousness research has revealed that our psyches have no real or absolute boundaries.",
+      "mode": ["mind", "body", "soul"],
+      "color": "#0F766E",
+      "geometry": "mandala",
+      "sound": "binaural theta",
+      "weight": 0.75
+    }
+  ]
+}
+
+// registry/inspirations/mystic.json
+{
+  "domain": "mystic",
+  "description": "Hermetics, saints, alchemists, and spiritual pioneers",
+  "nodes": [
+    {
+      "id": "hermes_emerald",
+      "name": "Emerald Tablet",
+      "lineage": "Hermes Trismegistus",
+      "domain": "mystic",
+      "keywords": ["as above so below", "hermetic", "alchemy", "correspondence"],
+      "quote": "As above, so below; as below, so above.",
+      "mode": ["soul", "tech"],
+      "color": "#047857",
+      "geometry": "vesica piscis",
+      "sound": "432Hz tone",
+      "weight": 0.95
+    },
+    {
+      "id": "hildegard_visions",
+      "name": "Living Light",
+      "lineage": "Hildegard of Bingen",
+      "domain": "mystic",
+      "keywords": ["visions", "viriditas", "music", "healing"],
+      "quote": "All nature is at the disposal of humankind. We are to work with it. For without it we cannot survive.",
+      "mode": ["soul", "body"],
+      "color": "#10B981",
+      "geometry": "cosmic egg",
+      "sound": "gregorian mode",
+      "weight": 0.85
+    },
+    {
+      "id": "dee_monas",
+      "name": "Monas Hieroglyphica",
+      "lineage": "John Dee",
+      "domain": "mystic",
+      "keywords": ["angelic", "enochian", "mathematics", "sigils"],
+      "quote": "The unity of the monas is the root of all things.",
+      "mode": ["soul", "mind", "tech"],
+      "color": "#1E293B",
+      "geometry": "monas symbol",
+      "sound": "enochian chant",
+      "weight": 0.8
+    },
+    {
+      "id": "bruno_infinite",
+      "name": "Infinite Worlds",
+      "lineage": "Giordano Bruno",
+      "domain": "mystic",
+      "keywords": ["infinite", "cosmos", "memory", "art"],
+      "quote": "There is no absolute up or down, as Aristotle taught; no absolute position in space; but the position of a body is relative to that of other bodies.",
+      "mode": ["soul", "mind"],
+      "color": "#7C3AED",
+      "geometry": "infinite lattice",
+      "sound": "cosmic drone",
+      "weight": 0.75
+    }
+  ]
+}
+
+// registry/inspirations/science.json
+{
+  "domain": "science",
+  "description": "Scientific pioneers, physics, and technical visionaries",
+  "nodes": [
+    {
+      "id": "tesla_resonance",
+      "name": "Resonant Frequency",
+      "lineage": "Nikola Tesla",
+      "domain": "science",
+      "keywords": ["electricity", "resonance", "frequency", "wireless"],
+      "quote": "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.",
+      "mode": ["tech", "mind"],
+      "color": "#06B6D4",
+      "geometry": "coil",
+      "sound": "7.83Hz Schumann",
+      "weight": 0.9
+    },
+    {
+      "id": "fuller_synergetics",
+      "name": "Synergetic Geometry",
+      "lineage": "Buckminster Fuller",
+      "domain": "science",
+      "keywords": ["synergetics", "tensegrity", "geodesic", "spaceship earth"],
+      "quote": "When I am working on a problem, I never think about beauty but when I have finished, if the solution is not beautiful, I know it is wrong.",
+      "mode": ["tech", "mind", "body"],
+      "color": "#F59E0B",
+      "geometry": "geodesic dome",
+      "sound": "harmonic series",
+      "weight": 0.85
+    },
+    {
+      "id": "turing_machine",
+      "name": "Universal Computation",
+      "lineage": "Alan Turing",
+      "domain": "science",
+      "keywords": ["computation", "artificial intelligence", "morphogenesis", "patterns"],
+      "quote": "We can only see a short distance ahead, but we can see plenty there that needs to be done.",
+      "mode": ["tech", "mind"],
+      "color": "#3B82F6",
+      "geometry": "cellular automata",
+      "sound": "digital synthesis",
+      "weight": 0.8
+    },
+    {
+      "id": "bohm_implicate",
+      "name": "Implicate Order",
+      "lineage": "David Bohm",
+      "domain": "science",
+      "keywords": ["quantum", "wholeness", "implicate order", "dialogue"],
+      "quote": "The field of the finite is all that we can see, hear, touch, remember, and describe. This field is basically that which is manifest, or tangible.",
+      "mode": ["tech", "mind", "soul"],
+      "color": "#8B5CF6",
+      "geometry": "holographic",
+      "sound": "quantum oscillation",
+      "weight": 0.75
+    }
+  ]
+}
+
+// registry/inspirations/art.json
+{
+  "domain": "art",
+  "description": "Artists, poets, musicians, and creative visionaries",
+  "nodes": [
+    {
+      "id": "kunz_geometry",
+      "name": "Sacred Geometry Art",
+      "lineage": "Emma Kunz",
+      "domain": "art",
+      "keywords": ["sacred geometry", "healing", "pendulum", "grids"],
+      "quote": "My pictures are for the 21st century.",
+      "mode": ["soul", "body"],
+      "color": "#DC2626",
+      "geometry": "radiating grid",
+      "sound": "crystal bowls",
+      "weight": 0.9
+    },
+    {
+      "id": "blake_imagination",
+      "name": "Prophetic Vision",
+      "lineage": "William Blake",
+      "domain": "art",
+      "keywords": ["imagination", "prophecy", "poetry", "mysticism"],
+      "quote": "If the doors of perception were cleansed everything would appear to man as it is, Infinite.",
+      "mode": ["soul", "mind"],
+      "color": "#991B1B",
+      "geometry": "illuminated manuscript",
+      "sound": "angelic choir",
+      "weight": 0.85
+    },
+    {
+      "id": "cage_silence",
+      "name": "Prepared Silence",
+      "lineage": "John Cage",
+      "domain": "art",
+      "keywords": ["chance", "silence", "prepared piano", "zen"],
+      "quote": "There is no such thing as an empty space or an empty time. There is always something to see, something to hear.",
+      "mode": ["mind", "soul"],
+      "color": "#171717",
+      "geometry": "random points",
+      "sound": "4'33\"",
+      "weight": 0.8
+    },
+    {
+      "id": "fleischer_surreal",
+      "name": "Surreal Animation",
+      "lineage": "Max Fleischer",
+      "domain": "art",
+      "keywords": ["animation", "surreal", "betty boop", "rotoscope"],
+      "quote": "If it can be done in real life, it's not animation.",
+      "mode": ["mind", "tech"],
+      "color": "#EA580C",
+      "geometry": "rubber hose",
+      "sound": "jazz syncopation",
+      "weight": 0.75
+    }
+  ]
+}

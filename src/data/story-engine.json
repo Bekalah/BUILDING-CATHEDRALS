@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Interactive Story Engine for Cathedral of Circuits - CYOA System",
+    "totalArcs": 5,
+    "standards": "trauma-aware, branching, modular"
+  },
+  "storyArcs": {
+    "trauma-transformation": {
+      "id": "trauma-transformation",
+      "title": "The Broken Code",
+      "description": "A journey through creative oppression to rebirth",
+      "startingRealm": "chapel",
+      "triggerNode": "C144N-001",
+      "chapters": {
+        "chapter-1": {
+          "id": "chapter-1",
+          "title": "The Empty Canvas",
+          "description": "You stand before a blank canvas that mirrors your inner void",
+          "choices": [
+            {
+              "id": "choice-1-1",
+              "text": "Pick up the brush despite the fear",
+              "consequence": "Enter the fractal labyrinth",
+              "nextChapter": "chapter-2",
+              "personalityShift": { "courage": 0.2, "creativity": 0.1 }
+            },
+            {
+              "id": "choice-1-2",
+              "text": "Sit with the emptiness and breathe",
+              "consequence": "Discover the void's hidden patterns",
+              "nextChapter": "chapter-3",
+              "personalityShift": { "mindfulness": 0.2, "intuition": 0.1 }
+            },
+            {
+              "id": "choice-1-3",
+              "text": "Ask the shadow guide for help",
+              "consequence": "Learn to dance with your demons",
+              "nextChapter": "chapter-4",
+              "personalityShift": { "compassion": 0.2, "resilience": 0.1 }
+            }
+          ]
+        },
+        "chapter-2": {
+          "id": "chapter-2",
+          "title": "The Fractal Labyrinth",
+          "description": "The labyrinth shifts and changes as you navigate its fractal paths",
+          "choices": [
+            {
+              "id": "choice-2-1",
+              "text": "Follow the golden spiral deeper",
+              "consequence": "Discover hidden geometric truths",
+              "nextChapter": "chapter-5",
+              "personalityShift": { "wisdom": 0.2, "structure": 0.1 }
+            },
+            {
+              "id": "choice-2-2",
+              "text": "Break through the mirrored walls",
+              "consequence": "Confront multiple versions of yourself",
+              "nextChapter": "chapter-6",
+              "personalityShift": { "self-awareness": 0.2, "integration": 0.1 }
+            }
+          ]
+        },
+        "chapter-3": {
+          "id": "chapter-3",
+          "title": "The Void's Wisdom",
+          "description": "In emptiness, you find the seeds of creation",
+          "choices": [
+            {
+              "id": "choice-3-1",
+              "text": "Plant seeds in the fertile darkness",
+              "consequence": "Watch creativity bloom from nothing",
+              "nextChapter": "chapter-7",
+              "personalityShift": { "creativity": 0.3, "patience": 0.1 }
+            },
+            {
+              "id": "choice-3-2",
+              "text": "Study the patterns in the emptiness",
+              "consequence": "Learn the mathematics of manifestation",
+              "nextChapter": "chapter-8",
+              "personalityShift": { "knowledge": 0.2, "manifestation": 0.1 }
+            }
+          ]
+        }
+      },
+      "endings": {
+        "rebirth": {
+          "id": "rebirth",
+          "title": "Creative Resurrection",
+          "description": "You emerge from the darkness with newfound creative power",
+          "requirements": { "creativity": 0.7, "resilience": 0.6 },
+          "rewards": ["creative-respawn-ability", "trauma-integration"]
+        },
+        "integration": {
+          "id": "integration",
+          "title": "Harmonious Balance",
+          "description": "You learn to dance between light and shadow",
+          "requirements": { "balance": 0.7, "compassion": 0.6 },
+          "rewards": ["shadow-dancing", "emotional-intelligence"]
+        },
+        "wisdom": {
+          "id": "wisdom",
+          "title": "The Teaching Path",
+          "description": "Your journey becomes wisdom for others",
+          "requirements": { "wisdom": 0.8, "compassion": 0.7 },
+          "rewards": ["teaching-ability", "mentorship-gift"]
+        }
+      }
+    },
+    "manifestation-journey": {
+      "id": "manifestation-journey",
+      "title": "The Architect's Will",
+      "description": "Learn to build reality through intention and structure",
+      "startingRealm": "laboratory",
+      "triggerNode": "C144N-002",
+      "chapters": {
+        "chapter-1": {
+          "id": "chapter-1",
+          "title": "The Empty Blueprint",
+          "description": "You hold the tools of creation but no clear vision",
+          "choices": [
+            {
+              "id": "choice-1-1",
+              "text": "Study sacred geometry patterns",
+              "consequence": "Learn the language of creation",
+              "nextChapter": "chapter-2",
+              "personalityShift": { "knowledge": 0.2, "structure": 0.1 }
+            },
+            {
+              "id": "choice-1-2",
+              "text": "Meditate on your deepest desire",
+              "consequence": "Clarify your true intention",
+              "nextChapter": "chapter-3",
+              "personalityShift": { "clarity": 0.2, "focus": 0.1 }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "storyState": {
+    "playerAttributes": {
+      "creativity": 0.5,
+      "wisdom": 0.5,
+      "courage": 0.5,
+      "compassion": 0.5,
+      "knowledge": 0.5,
+      "resilience": 0.5,
+      "manifestation": 0.5,
+      "integration": 0.5
+    },
+    "inventory": [],
+    "visitedRealms": [],
+    "completedArcs": [],
+    "currentChapter": null,
+    "activeChoices": []
+  },
+  "narrativeElements": {
+    "symbols": {
+      "broken-brush": "Represents creative blocks and trauma",
+      "golden-spiral": "Symbolizes natural growth and manifestation",
+      "shadow-dance": "The integration of light and dark aspects",
+      "crystal-lattice": "Perfect structure and memory"
+    },
+    "themes": [
+      "trauma-to-transformation",
+      "creative-oppression-to-freedom",
+      "isolation-to-connection",
+      "chaos-to-structure",
+      "wounding-to-healing"
+    ],
+    "archetypes": [
+      "the-wounded-healer",
+      "the-apprentice",
+      "the-shadow-guide",
+      "the-wise-mentor",
+      "the-eternal-child"
+    ]
+  }
+}

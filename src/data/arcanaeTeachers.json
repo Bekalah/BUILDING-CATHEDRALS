@@ -1,0 +1,59 @@
+{
+  "moonchild": {
+    "id": "moonchild",
+    "name": "Moonchild",
+    "title": "Master of Lunar Alchemy & Creative Rebellion",
+    "discipline": "Generative Art & Fractal Composition",
+    "description": "Learn to transform trauma into visionary art through lunar cycles and harmonic resonance.",
+    "labType": "apophysis",
+    "harmonicTone": "C4",
+    "crystals": ["moonstone", "selenite"],
+    "teachings": [
+      "Draw from the void",
+      "Embrace creative chaos",
+      "Transform through cycles",
+      "Code as ritual"
+    ],
+    "realMasters": ["Hilma af Klint", "Emma Kunz", "Leonora Carrington"],
+    "outputs": ["fractal art", "generative poetry", "soundscapes", "ritual code"],
+    "inspiration": ["8-circuit consciousness", "IFS parts work", "transpersonal psychology"]
+  },
+  "magician": {
+    "id": "magician",
+    "name": "The Magician",
+    "title": "Master of Will & Manifestation",
+    "discipline": "Sacred Geometry & Code Architecture",
+    "description": "Build digital temples through mathematical precision and intentional design.",
+    "labType": "mandelbulb",
+    "harmonicTone": "E4",
+    "crystals": ["clear-quartz", "citrine"],
+    "teachings": [
+      "As above, so below",
+      "Code with intention",
+      "Geometry as language",
+      "Manifest through structure"
+    ],
+    "realMasters": ["John Dee", "Buckminster Fuller", "Paul Foster Case"],
+    "outputs": ["geometric art", "architectural code", "manifestation systems", "sacred algorithms"],
+    "inspiration": ["Hermetic principles", "integral theory", "sacred mathematics"]
+  },
+  "highPriestess": {
+    "id": "high-priestess",
+    "name": "High Priestess",
+    "title": "Guardian of Hidden Knowledge",
+    "discipline": "Esoteric Research & Symbolic Writing",
+    "description": "Decode ancient wisdom and write your own grimoire through deep research and symbolic synthesis.",
+    "labType": "vesica",
+    "harmonicTone": "G4",
+    "crystals": ["amethyst", "lapis-lazuli"],
+    "teachings": [
+      "Seek hidden patterns",
+      "Write your truth",
+      "Research as revelation",
+      "Symbols hold power"
+    ],
+    "realMasters": ["Dion Fortune", "Hypatia", "Mary Shelley"],
+    "outputs": ["research essays", "symbolic poetry", "grimoire pages", "knowledge maps"],
+    "inspiration": ["Jungian psychology", "Qabalah", "archetypal studies"]
+  }
+}

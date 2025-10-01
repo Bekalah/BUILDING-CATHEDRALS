@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Codex 144:99 - Metaphysical and Scientific Node System for Cathedral of Circuits",
+    "totalNodes": 144,
+    "lastUpdated": "2025-01-01",
+    "standards": "ND-safe, trauma-aware, museum-grade"
+  },
+  "nodes": {
+    "C144N-001": {
+      "id": "C144N-001",
+      "name": "Moonchild Arcana",
+      "type": "archetype",
+      "element": "water",
+      "chakra": "sacral",
+      "planet": "moon",
+      "harmonicTone": "C4",
+      "fractalType": "mandelbulb",
+      "crystals": ["moonstone", "selenite"],
+      "realMasters": ["Hilma af Klint", "Emma Kunz", "Leonora Carrington"],
+      "description": "Transformative lunar alchemy and creative rebellion",
+      "attributes": {
+        "creativity": 0.95,
+        "intuition": 0.90,
+        "transformation": 0.85,
+        "mystery": 0.80
+      },
+      "modHooks": {
+        "artGeneration": "fractal-moon-phases",
+        "musicGeneration": "lunar-harmonics",
+        "storyBranch": "trauma-transformation-arc"
+      },
+      "resources": {
+        "art": ["hilma-af-klint-paintings", "lunar-symbolism"],
+        "music": ["lunar-chants", "water-sounds"],
+        "science": ["lunar-cycles", "tidal-forces"]
+      }
+    },
+    "C144N-002": {
+      "id": "C144N-002",
+      "name": "The Magician",
+      "type": "archetype",
+      "element": "fire",
+      "chakra": "solar-plexus",
+      "planet": "mercury",
+      "harmonicTone": "E4",
+      "fractalType": "sacred-geometry",
+      "crystals": ["clear-quartz", "citrine"],
+      "realMasters": ["John Dee", "Buckminster Fuller", "Paul Foster Case"],
+      "description": "Will, manifestation, and sacred architecture",
+      "attributes": {
+        "willpower": 0.95,
+        "manifestation": 0.90,
+        "structure": 0.85,
+        "communication": 0.80
+      },
+      "modHooks": {
+        "artGeneration": "geometric-temples",
+        "musicGeneration": "manifestation-tones",
+        "storyBranch": "will-manifestation-arc"
+      },
+      "resources": {
+        "art": ["sacred-geometry", "hermetic-symbols"],
+        "music": ["mercury-harmonics", "fire-sounds"],
+        "science": ["geometry", "quantum-manifestation"]
+      }
+    },
+    "C144N-003": {
+      "id": "C144N-003",
+      "name": "High Priestess",
+      "type": "archetype",
+      "element": "water",
+      "chakra": "third-eye",
+      "planet": "moon",
+      "harmonicTone": "G4",
+      "fractalType": "vesica-piscis",
+      "crystals": ["amethyst", "lapis-lazuli"],
+      "realMasters": ["Dion Fortune", "Hypatia", "Mary Shelley"],
+      "description": "Hidden knowledge and esoteric research",
+      "attributes": {
+        "wisdom": 0.95,
+        "intuition": 0.90,
+        "research": 0.85,
+        "mystery": 0.80
+      },
+      "modHooks": {
+        "artGeneration": "wisdom-glyphs",
+        "musicGeneration": "intuitive-harmonies",
+        "storyBranch": "knowledge-revelation-arc"
+      },
+      "resources": {
+        "art": ["ancient-manuscripts", "symbolic-diagrams"],
+        "music": ["meditative-chants", "water-flow"],
+        "science": ["cognitive-research", "pattern-recognition"]
+      }
+    },
+    "C144N-004": {
+      "id": "C144N-004",
+      "name": "Dragon Daimon",
+      "type": "daimon",
+      "element": "fire",
+      "chakra": "root",
+      "planet": "mars",
+      "harmonicTone": "F#3",
+      "fractalType": "l-system-dragon",
+      "crystals": ["dragon-stone", "ruby"],
+      "realMasters": ["Robert Gilbert", "Sacred Geometry researchers"],
+      "description": "Primal creative force and biogeometric wisdom",
+      "attributes": {
+        "power": 0.95,
+        "creativity": 0.90,
+        "wisdom": 0.85,
+        "protection": 0.80
+      },
+      "modHooks": {
+        "artGeneration": "dragon-fractals",
+        "musicGeneration": "primal-tones",
+        "storyBranch": "creative-force-arc"
+      },
+      "resources": {
+        "art": ["dragon-symbolism", "biogeometry"],
+        "music": ["dragon-chants", "earth-rhythms"],
+        "science": ["biogeometry", "fractal-biology"]
+      }
+    },
+    "C144N-005": {
+      "id": "C144N-005",
+      "name": "Crystal Lattice",
+      "type": "element",
+      "element": "earth",
+      "chakra": "root",
+      "planet": "earth",
+      "harmonicTone": "A2",
+      "fractalType": "crystal-grid",
+      "crystals": ["quartz", "amethyst", "citrine"],
+      "realMasters": ["Marcel Vogel", "Crystal researchers"],
+      "description": "Crystal consciousness and lattice intelligence",
+      "attributes": {
+        "structure": 0.95,
+        "memory": 0.90,
+        "amplification": 0.85,
+        "healing": 0.80
+      },
+      "modHooks": {
+        "artGeneration": "crystal-patterns",
+        "musicGeneration": "crystal-tones",
+        "storyBranch": "lattice-intelligence-arc"
+      },
+      "resources": {
+        "art": ["crystal-photography", "lattice-diagrams"],
+        "music": ["crystal-bowls", "mineral-sounds"],
+        "science": ["crystallography", "piezoelectricity"]
+      }
+    }
+  },
+  "gates": {
+    "gate-01": {
+      "id": "gate-01",
+      "name": "Threshold Gate",
+      "type": "entry",
+      "nodes": ["C144N-001", "C144N-002", "C144N-003"],
+      "description": "Entry point to the Codex realms"
+    },
+    "gate-02": {
+      "id": "gate-02",
+      "name": "Transformation Gate",
+      "type": "process",
+      "nodes": ["C144N-004", "C144N-005"],
+      "description": "Gateway of alchemical transformation"
+    }
+  },
+  "constants": {
+    "pillars": 21,
+    "spine": 33,
+    "shem": 72,
+    "archetypes": 78,
+    "gates": 99,
+    "lattice": 144,
+    "completion": 243
+  }
+}

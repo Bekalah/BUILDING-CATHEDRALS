@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathedral - Living Temple Space</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Garamond', serif;
+            background: #0a0a0a;
+            color: #e0d5b7;
+            overflow-x: hidden;
+            perspective: 1200px;
+        }
+
+        /* Main Cathedral Chamber */
+        .cathedral-chamber {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: 
+                radial-gradient(ellipse at top, 
+                    rgba(41, 28, 71, 0.4) 0%, 
+                    rgba(0, 0, 0, 0.95) 100%);
+            transform-style: preserve-3d;
+        }
+
+        /* Depth Layers */
+        .depth-layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 600ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+
+        .depth-layer-1 {
+            transform: translateZ(-100px) scale(1.1);
+            opacity: 0.9;
+        }
+
+        .depth-layer-2 {
+            transform: translateZ(-300px) scale(1.3);
+            opacity: 0.7;
+        }
+
+        .depth-layer-3 {
+            transform: translateZ(-600px) scale(1.6);
+            opacity: 0.5;
+        }
+
+        /* Gothic Columns */
+        .gothic-column {
+            position: absolute;
+            width: 80px;
+            height: 100%;
+            background: linear-gradient(
+                180deg,
+                rgba(30, 20, 50, 0.9) 0%,
+                rgba(20, 15, 35, 0.95) 50%,
+                rgba(10, 5, 20, 1) 100%
+            );
+            clip-path: polygon(
+                40% 0%,
+                60% 0%,
+                65% 10%,
+                65% 90%,
+                100% 100%,
+                0% 100%,
+                35% 90%,
+                35% 10%
+            );
+        }
+
+        .column-1 { left: 10%; }
+        .column-2 { left: 30%; }
+        .column-3 { right: 30%; }
+        .column-4 { right: 10%; }
+
+        /* Gothic Arches */
+        .gothic-arch {
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            border: 2px solid rgba(100, 80, 150, 0.3);
+            border-radius: 50% 50% 0 0;
+            transform-style: preserve-3d;
+            animation: archBreathe 8s ease-in-out infinite;
+        }
+
+        @keyframes archBreathe {
+            0%, 100% { 
+                transform: rotateX(0deg) scale(1);
+                opacity: 0.3;
+            }
+            50% { 
+                transform: rotateX(2deg) scale(1.02);
+                opacity: 0.5;
+            }
+        }
+
+        .arch-1 { top: 20%; left: 20%; }
+        .arch-2 { top: 20%; right: 20%; }
+        .arch-3 { top: 40%; left: 50%; transform: translateX(-50%); }
+
+        /* Stained Glass Panels */
+        .stained-glass {
+            position: absolute;
+            width: 150px;
+            height: 250px;
+            background: 
+                conic-gradient(
+                    from 45deg,
+                    rgba(74, 20, 140, 0.7) 0deg,
+                    rgba(26, 35, 126, 0.7) 60deg,
+                    rgba(0, 96, 100, 0.7) 120deg,
+                    rgba(27, 94, 32, 0.7) 180deg,
+                    rgba(245, 127, 23, 0.7) 240deg,
+                    rgba(183, 28, 28, 0.7) 300deg,
+                    rgba(74, 20, 140, 0.7) 360deg
+                );
+            mix-blend-mode: multiply;
+            filter: brightness(1.5) saturate(1.2);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            animation: glassShimmer 10s ease-in-out infinite;
+        }
+
+        @keyframes glassShimmer {
+            0%, 100% { filter: brightness(1.5) saturate(1.2) hue-rotate(0deg); }
+            50% { filter: brightness(2) saturate(1.5) hue-rotate(30deg); }
+        }
+
+        .glass-1 { top: 10%; left: 15%; }
+        .glass-2 { top: 10%; right: 15%; }
+
+        /* Floating Light Particles */
+        .light-particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: radial-gradient(
+                circle, 
+                rgba(255, 255, 255, 0.9) 0%, 
+                rgba(255, 255, 255, 0) 70%
+            );
+            box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+            animation: floatLight 20s infinite ease-in-out;
+        }
+
+        @keyframes floatLight {
+            0% { 
+                transform: translate3d(0, 100vh, 0) scale(0);
+                opacity: 0;
+            }
+            10% { 
+                transform: translate3d(10vw, 80vh, 50px) scale(1);
+                opacity: 0.8;
+            }
+            50% { 
+                transform: translate3d(-10vw, 20vh, 100px) scale(0.8);
+                opacity: 1;
+            }
+            90% { 
+                transform: translate3d(5vw, -10vh, 150px) scale(0.3);
+                opacity: 0.3;
+            }
+            100% { 
+                transform: translate3d(0, -20vh, 200px) scale(0);
+                opacity: 0;
+            }
+        }
+
+        /* Sacred Geometry Overlay */
+        .sacred-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            mix-blend-mode: overlay;
+            opacity: 0.3;
+        }
+
+        /* Museum Plaque */
+        .museum-plaque {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%) translateZ(50px);
+            background: linear-gradient(
+                135deg,
+                rgba(30, 25, 20, 0.95),
+                rgba(50, 40, 30, 0.9)
+            );
+            border: 1px solid rgba(180, 150, 100, 0.3);
+            padding: 20px 30px;
+            border-radius: 2px;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 600ms cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+
+        .museum-plaque:hover {
+            transform: translateX(-50%) translateZ(80px) scale(1.05);
+            box-shadow: 
+                0 15px 40px rgba(0, 0, 0, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .plaque-title {
+            font-size: 24px;
+            color: #f4e4c1;
+            margin-bottom: 10px;
+            text-shadow: 
+                0 1px 3px rgba(0, 0, 0, 0.3),
+                0 2px 6px rgba(0, 0, 0, 0.2);
+            letter-spacing: 0.05em;
+        }
+
+        .plaque-text {
+            font-size: 14px;
+            color: #d4c4a1;
+            line-height: 1.6;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Angel Activation Circle */
+        .angel-wheel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) translateZ(0);
+            width: 400px;
+            height: 400px;
+            opacity: 0;
+            transition: opacity 2s ease;
+        }
+
+        .angel-wheel.active {
+            opacity: 1;
+        }
+
+        .angel-wheel svg {
+            width: 100%;
+            height: 100%;
+            animation: wheelRotate 60s linear infinite;
+        }
+
+        @keyframes wheelRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Control Panel */
+        .control-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(20, 15, 30, 0.9);
+            border: 1px solid rgba(100, 80, 150, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .control-button {
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            margin: 5px 0;
+            background: linear-gradient(135deg, rgba(74, 20, 140, 0.3), rgba(26, 35, 126, 0.3));
+            border: 1px solid rgba(150, 130, 200, 0.3);
+            color: #e0d5b7;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 300ms ease;
+        }
+
+        .control-button:hover {
+            background: linear-gradient(135deg, rgba(74, 20, 140, 0.5), rgba(26, 35, 126, 0.5));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(74, 20, 140, 0.3);
+        }
+
+        /* Cymatic Canvas */
+        #cymatic-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="cathedral-chamber" id="cathedral">
+        <!-- Depth Layer 3 - Background -->
+        <div class="depth-layer depth-layer-3">
+            <div class="gothic-arch arch-3"></div>
+        </div>
+
+        <!-- Depth Layer 2 - Mid -->
+        <div class="depth-layer depth-layer-2">
+            <div class="gothic-arch arch-1"></div>
+            <div class="gothic-arch arch-2"></div>
+        </div>
+
+        <!-- Depth Layer 1 - Foreground -->
+        <div class="depth-layer depth-layer-1">
+            <div class="gothic-column column-1"></div>
+            <div class="gothic-column column-2"></div>
+            <div class="gothic-column column-3"></div>
+            <div class="gothic-column column-4"></div>
+            <div class="stained-glass glass-1"></div>
+            <div class="stained-glass glass-2"></div>
+        </div>
+
+        <!-- Sacred Geometry Canvas -->
+        <canvas class="sacred-overlay" id="sacred-canvas"></canvas>
+
+        <!-- Cymatic Visualization -->
+        <div id="cymatic-container"></div>
+
+        <!-- Angel Wheel -->
+        <div class="angel-wheel" id="angel-wheel">
+            <svg viewBox="0 0 400 400">
+                <defs>
+                    <radialGradient id="wheelGradient">
+                        <stop offset="0%" style="stop-color:#9400D3;stop-opacity:0.8" />
+                        <stop offset="100%" style="stop-color:#4B0082;stop-opacity:0.2" />
+                    </radialGradient>
+                </defs>
+                <circle cx="200" cy="200" r="180" fill="none" stroke="url(#wheelGradient)" stroke-width="2" opacity="0.5"/>
+                <circle cx="200" cy="200" r="150" fill="none" stroke="url(#wheelGradient)" stroke-width="1" opacity="0.4"/>
+                <circle cx="200" cy="200" r="120" fill="none" stroke="url(#wheelGradient)" stroke-width="1" opacity="0.3"/>
+            </svg>
+        </div>
+
+        <!-- Museum Plaque -->
+        <div class="museum-plaque">
+            <h3 class="plaque-title">Cathedral of Living Resonance</h3>
+            <p class="plaque-text">
+                A sacred digital space where frequency becomes form,<br>
+                and ancient wisdom merges with quantum harmonics.<br>
+                Each visitor shapes the temple through their presence.
+            </p>
+        </div>
+    </div>
+
+    <!-- Control Panel -->
+    <div class="control-panel">
+        <button class="control-button" onclick="activateSolfeggio()">Activate Solfeggio</button>
+        <button class="control-button" onclick="showAngelWheel()">Summon Angels</button>
+        <button class="control-button" onclick="startCymatic()">Begin Cymatics</button>
+        <button class="control-button" onclick="fusionDemo()">Elemental Fusion</button>
+    </div>
+
+    <script>
+        // Initialize cathedral with parallax
+        const cathedral = document.getElementById('cathedral');
+        const layers = document.querySelectorAll('.depth-layer');
+        
+        cathedral.addEventListener('mousemove', (e) => {
+            const rect = cathedral.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            
+            layers.forEach((layer, i) => {
+                const depth = (i + 1) * 20;
+                layer.style.transform = `
+                    translateZ(${-100 * (i + 1)}px) 
+                    scale(${1 + i * 0.3})
+                    rotateY(${x * depth}deg)
+                    rotateX(${-y * depth * 0.5}deg)
+                `;
+            });
+        });
+
+        // Create floating light particles
+        function createLightParticles() {
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'light-particle';
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.animationDelay = `${Math.random() * 20}s`;
+                particle.style.animationDuration = `${15 + Math.random() * 10}s`;
+                cathedral.appendChild(particle);
+            }
+        }
+
+        // Sacred Geometry Animation
+        function animateSacredGeometry() {
+            const canvas = document.getElementById('sacred-canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            let time = 0;
+            const phi = 1.618033988749;
+            
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Draw Fibonacci spiral
+                ctx.strokeStyle = 'rgba(200, 180, 255, 0.1)';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                
+                const centerX = canvas.width / 2;
+                const centerY = canvas.height / 2;
+                
+                for (let angle = 0; angle < Math.PI * 8; angle += 0.1) {
+                    const radius = Math.pow(phi, angle / Math.PI) * 10;
+                    const x = centerX + Math.cos(angle + time * 0.001) * radius;
+                    const y = centerY + Math.sin(angle + time * 0.001) * radius;
+                    
+                    if (angle === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                
+                ctx.stroke();
+                
+                // Draw Metatron's outline
+                const size = 150;
+                ctx.strokeStyle = 'rgba(150, 130, 200, 0.05)';
+                
+                for (let i = 0; i < 6; i++) {
+                    const angle = (Math.PI * 2 / 6) * i + time * 0.0005;
+                    const x = centerX + Math.cos(angle) * size;
+                    const y = centerY + Math.sin(angle) * size;
+                    
+                    ctx.beginPath();
+                    ctx.arc(x, y, size / 3, 0, Math.PI * 2);
+                    ctx.stroke();
+                }
+                
+                time++;
+                requestAnimationFrame(draw);
+            }
+            
+            draw();
+        }
+
+        // Control Panel Functions
+        function activateSolfeggio() {
+            const frequencies = [174, 285, 396, 417, 528, 639, 741, 852, 963];
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            
+            frequencies.forEach((freq, i) => {
+                setTimeout(() => {
+                    const osc = audioContext.createOscillator();
+                    const gain = audioContext.createGain();
+                    
+                    osc.frequency.value = freq;
+                    osc.type = 'sine';
+                    gain.gain.value = 0.05;
+                    gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 2);
+                    
+                    osc.connect(gain);
+                    gain.connect(audioContext.destination);
+                    
+                    osc.start();
+                    osc.stop(audioContext.currentTime + 2);
+                    
+                    // Visual feedback
+                    cathedral.style.filter = `hue-rotate(${i * 40}deg)`;
+                    setTimeout(() => {
+                        cathedral.style.filter = 'none';
+                    }, 2000);
+                }, i * 300);
+            });
+        }
+
+        function showAngelWheel() {
+            const wheel = document.getElementById('angel-wheel');
+            wheel.classList.toggle('active');
+        }
+
+        function startCymatic() {
+            // Simple cymatic visualization
+            const container = document.getElementById('cymatic-container');
+            container.innerHTML = ''; // Clear previous
+            
+            const canvas = document.createElement('canvas');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            canvas.style.position = 'absolute';
+            canvas.style.top = '0';
+            canvas.style.left = '0';
+            container.appendChild(canvas);
+            
+            const ctx = canvas.getContext('2d');
+            let time = 0;
+            
+            function drawCymatic() {
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                const centerX = canvas.width / 2;
+                const centerY = canvas.height / 2;
+                
+                // Draw interference pattern
+                for (let i = 0; i < 5; i++) {
+                    const radius = 50 + i * 50 + Math.sin(time * 0.01 + i) * 20;
+                    
+                    ctx.strokeStyle = `rgba(200, 180, 255, ${0.3 - i * 0.05})`;
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+                    ctx.stroke();
+                }
+                
+                time++;
+                if (time < 300) {
+                    requestAnimationFrame(drawCymatic);
+                }
+            }
+            
+            drawCymatic();
+        }
+
+        function fusionDemo() {
+            // Create particle fusion effect
+            const colors = ['#FF4500', '#0080FF', '#87CEEB', '#8B4513'];
+            const particles = [];
+            
+            for (let i = 0; i < 100; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'absolute';
+                particle.style.width = '4px';
+                particle.style.height = '4px';
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.borderRadius = '50%';
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.boxShadow = '0 0 10px currentColor';
+                particle.style.zIndex = '1000';
+                cathedral.appendChild(particle);
+                
+                // Animate to center
+                particle.animate([
+                    { transform: 'translate(0, 0) scale(1)', opacity: 1 },
+                    { transform: `translate(${window.innerWidth/2 - particle.offsetLeft}px, ${window.innerHeight/2 - particle.offsetTop}px) scale(0)`, opacity: 0 }
+                ], {
+                    duration: 3000,
+                    easing: 'ease-in'
+                }).onfinish = () => particle.remove();
+            }
+            
+            // Flash effect at convergence
+            setTimeout(() => {
+                const flash = document.createElement('div');
+                flash.style.position = 'absolute';
+                flash.style.top = '50%';
+                flash.style.left = '50%';
+                flash.style.transform = 'translate(-50%, -50%)';
+                flash.style.width = '100px';
+                flash.style.height = '100px';
+                flash.style.background = 'radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%)';
+                flash.style.borderRadius = '50%';
+                flash.style.zIndex = '1001';
+                cathedral.appendChild(flash);
+                
+                flash.animate([
+                    { transform: 'translate(-50%, -50%) scale(0)', opacity: 1 },
+                    { transform: 'translate(-50%, -50%) scale(10)', opacity: 0 }
+                ], {
+                    duration: 1000,
+                    easing: 'ease-out'
+                }).onfinish = () => flash.remove();
+            }, 2500);
+        }
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            createLightParticles();
+            animateSacredGeometry();
+        });
+    </script>
+</body>
+</html>

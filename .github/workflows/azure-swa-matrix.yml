@@ -1,0 +1,44 @@
+name: Azure SWA Deploy Matrix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/**'
+      - 'packages/**'
+      - 'scripts/auto-fix.js'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [arcanae-lab, cathedral-of-circuits, stone-grimoire]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install root dependencies
+        run: |
+          if [ -f package.json ]; then npm ci --no-audit --no-fund; fi
+
+      - name: Prepare app
+        working-directory: apps/${{ matrix.app }}
+        run: |
+          if [ -f package.json ]; then npm ci --no-audit --no-fund; fi
+          if [ -f package.json ]; then npm run build; fi
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.SWA_TOKEN_ARCANAE_LAB }}
+          app_location: apps/${{ matrix.app }}
+          output_location: dist
+        env:
+          SKIP_APP_BUILD: true

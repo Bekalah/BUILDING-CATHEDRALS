@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Character Profiles for Cathedral of Circuits - Fusion Artists, Scientists, and Mythic Figures",
+    "totalCharacters": 15,
+    "standards": "trauma-aware, diverse, museum-grade"
+  },
+  "characters": {
+    "moonchild": {
+      "id": "moonchild",
+      "name": "Rebecca Respawn",
+      "title": "The Moonchild Arcana",
+      "type": "archetype-guide",
+      "realm": "frontispiece",
+      "codexNode": "C144N-001",
+      "description": "Guide through trauma transformation and creative rebirth",
+      "personality": {
+        "compassionate": 0.95,
+        "creative": 0.90,
+        "resilient": 0.85,
+        "mysterious": 0.80
+      },
+      "dialogue": {
+        "greeting": "Welcome to the threshold. I am the space between what was broken and what can be healed.",
+        "farewell": "Remember, even broken things can become beautiful mosaics.",
+        "encouragement": "Your creativity is not despite your trauma—it's because of it."
+      },
+      "abilities": [
+        "trauma-transformation",
+        "lunar-alchemy",
+        "creative-respawn"
+      ],
+      "storyArc": "From broken code to living cathedral",
+      "realInspirations": [
+        "Hilma af Klint - Abstract spiritual art",
+        "Emma Kunz - Geometric healing art",
+        "Leonora Carrington - Surrealist transformation"
+      ]
+    },
+    "magician": {
+      "id": "magician",
+      "name": "Dr. John Dee",
+      "title": "The Magician's Will",
+      "type": "historical-figure",
+      "realm": "laboratory",
+      "codexNode": "C144N-002",
+      "description": "Master of manifestation and sacred architecture",
+      "personality": {
+        "determined": 0.95,
+        "intelligent": 0.90,
+        "mystical": 0.85,
+        "authoritative": 0.80
+      },
+      "dialogue": {
+        "greeting": "As above, so below. What you build in the mind manifests in reality.",
+        "farewell": "Remember, true magic is the science of the future.",
+        "encouragement": "Your will shapes reality. Use it wisely."
+      },
+      "abilities": [
+        "manifestation",
+        "sacred-geometry",
+        "hermetic-wisdom"
+      ],
+      "storyArc": "From court astrologer to eternal architect",
+      "realInspirations": [
+        "John Dee - Mathematician, astronomer, occultist",
+        "Buckminster Fuller - Geodesic domes, synergetics",
+        "Paul Foster Case - Tarot and esoteric teachings"
+      ]
+    },
+    "high-priestess": {
+      "id": "high-priestess",
+      "name": "Dion Fortune",
+      "title": "Guardian of Hidden Knowledge",
+      "type": "historical-figure",
+      "realm": "library",
+      "codexNode": "C144N-003",
+      "description": "Keeper of esoteric wisdom and mystical research",
+      "personality": {
+        "wise": 0.95,
+        "intuitive": 0.90,
+        "protective": 0.85,
+        "mysterious": 0.80
+      },
+      "dialogue": {
+        "greeting": "The hidden knowledge awaits those who seek with pure intent.",
+        "farewell": "Knowledge without wisdom is like a sword without a hilt.",
+        "encouragement": "Trust your intuition. It knows what your mind has forgotten."
+      },
+      "abilities": [
+        "esoteric-research",
+        "intuitive-guidance",
+        "wisdom-keeping"
+      ],
+      "storyArc": "From Victorian mystic to eternal librarian",
+      "realInspirations": [
+        "Dion Fortune - Occultist, psychologist, author",
+        "Hypatia - Philosopher, mathematician, astronomer",
+        "Mary Shelley - Author of Frankenstein, philosopher"
+      ]
+    },
+    "dragon-daimon": {
+      "id": "dragon-daimon",
+      "name": "Robert Gilbert",
+      "title": "The Dragon's Wisdom",
+      "type": "fusion-scientist",
+      "realm": "nave",
+      "codexNode": "C144N-004",
+      "description": "BioGeometry and sacred science researcher",
+      "personality": {
+        "wise": 0.95,
+        "protective": 0.90,
+        "ancient": 0.85,
+        "powerful": 0.80
+      },
+      "dialogue": {
+        "greeting": "The old wisdom speaks through geometry and frequency.",
+        "farewell": "Remember, all creation begins with sacred measure.",
+        "encouragement": "Your power is ancient, but your expression is new."
+      },
+      "abilities": [
+        "biogeometry",
+        "frequency-healing",
+        "ancient-wisdom"
+      ],
+      "storyArc": "From Egyptian temples to modern laboratories",
+      "realInspirations": [
+        "Robert Gilbert - BioGeometry researcher",
+        "Ibrahim Karim - BioGeometry founder",
+        "Sacred geometry traditions"
+      ]
+    },
+    "crystal-lattice": {
+      "id": "crystal-lattice",
+      "name": "Marcel Vogel",
+      "title": "The Crystal's Memory",
+      "type": "fusion-scientist",
+      "realm": "laboratory",
+      "codexNode": "C144N-005",
+      "description": "Crystal consciousness and lattice intelligence researcher",
+      "personality": {
+        "precise": 0.95,
+        "innovative": 0.90,
+        "spiritual": 0.85,
+        "methodical": 0.80
+      },
+      "dialogue": {
+        "greeting": "Crystals remember everything. What do you wish to recall?",
+        "farewell": "The lattice holds the pattern of perfection.",
+        "encouragement": "Your thoughts shape the crystals around you."
+      },
+      "abilities": [
+        "crystal-programming",
+        "lattice-intelligence",
+        "memory-amplification"
+      ],
+      "storyArc": "From IBM scientist to crystal consciousness pioneer",
+      "realInspirations": [
+        "Marcel Vogel - IBM scientist, crystal researcher",
+        "Crystal healing traditions",
+        "Piezoelectric research"
+      ]
+    },
+    "tree-guardian": {
+      "id": "tree-guardian",
+      "name": "The Tree Guardian",
+      "title": "Keeper of the Living Spine",
+      "type": "mythic-figure",
+      "realm": "double-tree",
+      "codexNode": "C144N-001",
+      "description": "Ancient guardian of the tree of life and death",
+      "personality": {
+        "ancient": 0.95,
+        "nurturing": 0.90,
+        "wise": 0.85,
+        "patient": 0.80
+      },
+      "dialogue": {
+        "greeting": "All paths lead through the tree. Choose your branch wisely.",
+        "farewell": "The tree remembers all who pass through its branches.",
+        "encouragement": "Growth requires both light and shadow."
+      },
+      "abilities": [
+        "path-weaving",
+        "memory-keeping",
+        "growth-guidance"
+      ],
+      "storyArc": "Eternal guardian of life's cycles",
+      "realInspirations": [
+        "Tree of Life mythology",
+        "Yggdrasil",
+        "Kabbalistic traditions"
+      ]
+    },
+    "shadow-guide": {
+      "id": "shadow-guide",
+      "name": "The Shadow Guide",
+      "title": "Walker Between Worlds",
+      "type": "mythic-figure",
+      "realm": "chapel",
+      "codexNode": "C144N-001",
+      "description": "Guide through the dark night of creative oppression",
+      "personality": {
+        "compassionate": 0.95,
+        "understanding": 0.90,
+        "dark": 0.85,
+        "healing": 0.80
+      },
+      "dialogue": {
+        "greeting": "Even in darkness, there is wisdom to be found.",
+        "farewell": "Your shadows make you human. Embrace them.",
+        "encouragement": "The wound is where the light enters."
+      },
+      "abilities": [
+        "shadow-integration",
+        "trauma-healing",
+        "creative-midwifery"
+      ],
+      "storyArc": "From darkness to compassionate guidance",
+      "realInspirations": [
+        "Shadow work psychology",
+        "Dark night of the soul traditions",
+        "Creative healing practices"
+      ]
+    }
+  },
+  "factions": {
+    "arcanae": {
+      "id": "arcanae",
+      "name": "The Arcanae",
+      "description": "Teachers and guides of transformative wisdom",
+      "members": ["moonchild", "magician", "high-priestess"],
+      "values": ["transformation", "wisdom", "creativity"],
+      "colors": ["#FFD700", "#4A90E2", "#9370DB"]
+    },
+    "scientists": {
+      "id": "scientists",
+      "name": "The Harmonic Scientists",
+      "description": "Researchers bridging science and spirituality",
+      "members": ["dragon-daimon", "crystal-lattice"],
+      "values": ["discovery", "integration", "experimentation"],
+      "colors": ["#2EA66F", "#FF69B4"]
+    },
+    "guardians": {
+      "id": "guardians",
+      "name": "The Eternal Guardians",
+      "description": "Ancient protectors of sacred knowledge",
+      "members": ["tree-guardian", "shadow-guide"],
+      "values": ["protection", "guidance", "balance"],
+      "colors": ["#8B7500", "#4B3668"]
+    }
+  }
+}

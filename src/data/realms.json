@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Dynamic Realm System for Cathedral of Circuits",
+    "totalRealms": 7,
+    "standards": "ND-safe, trauma-aware, modular"
+  },
+  "realms": {
+    "frontispiece": {
+      "id": "realm-01",
+      "name": "The Frontispiece",
+      "subtitle": "The Door",
+      "theme": "threshold",
+      "geometry": "vesica-piscis",
+      "codexNodes": ["C144N-001", "C144N-002", "C144N-003"],
+      "characters": ["moonchild", "magician", "high-priestess"],
+      "artifacts": ["welcome-scroll", "threshold-crystal", "door-glyph"],
+      "description": "The sacred threshold between worlds, where the journey begins",
+      "entryPoint": "Choose your path through the vesica piscis gateway",
+      "modHooks": [
+        "add-character",
+        "change-geometry",
+        "link-resource",
+        "modify-threshold"
+      ],
+      "navigation": {
+        "exits": ["nave", "chapel", "library"],
+        "entrances": ["outer-court"]
+      },
+      "atmosphere": {
+        "lighting": "soft-golden",
+        "sound": "whispering-winds",
+        "scent": "ancient-parchment"
+      }
+    },
+    "nave": {
+      "id": "realm-02",
+      "name": "The Nave",
+      "subtitle": "Breath of the Book",
+      "theme": "sacred-space",
+      "geometry": "gothic-cathedral",
+      "codexNodes": ["C144N-004", "C144N-005"],
+      "characters": ["dragon-daimon", "crystal-lattice"],
+      "artifacts": ["living-spine", "breath-altar", "sacred-text"],
+      "description": "The central sacred space where the book breathes and lives",
+      "entryPoint": "Enter through the great doors and feel the living word",
+      "modHooks": [
+        "animate-spine",
+        "add-altar",
+        "modify-architecture",
+        "enhance-breath"
+      ],
+      "navigation": {
+        "exits": ["frontispiece", "transept", "choir"],
+        "entrances": ["frontispiece", "outer-court"]
+      },
+      "atmosphere": {
+        "lighting": "candle-glow",
+        "sound": "chanting-choir",
+        "scent": "incense-smoke"
+      }
+    },
+    "double-tree": {
+      "id": "realm-03",
+      "name": "Double Tree of Life",
+      "subtitle": "Living Spine",
+      "theme": "tree-of-life",
+      "geometry": "double-helix-tree",
+      "codexNodes": ["C144N-001", "C144N-002", "C144N-003", "C144N-004", "C144N-005"],
+      "characters": ["tree-guardian", "spine-weaver", "branch-walker"],
+      "artifacts": ["golden-apples", "serpent-coil", "tree-sap"],
+      "description": "The living double tree that connects all realms",
+      "entryPoint": "Climb the tree of life and death, where all paths converge",
+      "modHooks": [
+        "grow-branches",
+        "add-fruit",
+        "modify-paths",
+        "enhance-connections"
+      ],
+      "navigation": {
+        "exits": ["all-connected"],
+        "entrances": ["nave", "chapel", "library", "laboratory"]
+      },
+      "atmosphere": {
+        "lighting": "dappled-sunlight",
+        "sound": "rustling-leaves",
+        "scent": "fresh-growth"
+      }
+    },
+    "chapel": {
+      "id": "realm-04",
+      "name": "Chapel Perilous",
+      "subtitle": "Creative Oppression Room",
+      "theme": "trial-transformation",
+      "geometry": "fractal-labyrinth",
+      "codexNodes": ["C144N-001"],
+      "characters": ["shadow-guide", "inner-critic", "creative-spirit"],
+      "artifacts": ["broken-brush", "empty-canvas", "wounded-heart"],
+      "description": "The space of creative trials and transformation",
+      "entryPoint": "Face your creative demons and emerge transformed",
+      "modHooks": [
+        "add-trial",
+        "modify-demons",
+        "enhance-transformation",
+        "add-support"
+      ],
+      "navigation": {
+        "exits": ["nave", "sanctuary"],
+        "entrances": ["frontispiece", "nave"]
+      },
+      "atmosphere": {
+        "lighting": "flickering-shadows",
+        "sound": "echoing-voices",
+        "scent": "burnt-offerings"
+      }
+    },
+    "library": {
+      "id": "realm-05",
+      "name": "The Library",
+      "subtitle": "Hall of Hidden Knowledge",
+      "theme": "research-revelation",
+      "geometry": "infinite-bookshelves",
+      "codexNodes": ["C144N-003"],
+      "characters": ["librarian", "researcher", "wisdom-keeper"],
+      "artifacts": ["ancient-grimoires", "research-scrolls", "wisdom-crystals"],
+      "description": "The repository of all knowledge, waiting to be discovered",
+      "entryPoint": "Browse the infinite shelves and uncover hidden truths",
+      "modHooks": [
+        "add-books",
+        "organize-knowledge",
+        "enhance-search",
+        "add-revelation"
+      ],
+      "navigation": {
+        "exits": ["frontispiece", "laboratory", "sanctuary"],
+        "entrances": ["nave", "study"]
+      },
+      "atmosphere": {
+        "lighting": "warm-lamplight",
+        "sound": "turning-pages",
+        "scent": "old-books"
+      }
+    },
+    "laboratory": {
+      "id": "realm-06",
+      "name": "The Laboratory",
+      "subtitle": "Harmonic Experimentation",
+      "theme": "scientific-exploration",
+      "geometry": "fractal-workshop",
+      "codexNodes": ["C144N-002", "C144N-005"],
+      "characters": ["alchemist", "scientist", "frequency-weaver"],
+      "artifacts": ["harmonic-crystals", "frequency-generators", "experiment-notes"],
+      "description": "Where science and spirituality meet in harmonic experimentation",
+      "entryPoint": "Experiment with frequencies, crystals, and fractal mathematics",
+      "modHooks": [
+        "add-equipment",
+        "modify-frequencies",
+        "enhance-experiments",
+        "add-discoveries"
+      ],
+      "navigation": {
+        "exits": ["library", "workshop", "observatory"],
+        "entrances": ["nave", "study"]
+      },
+      "atmosphere": {
+        "lighting": "neon-glow",
+        "sound": "humming-machines",
+        "scent": "ozone-electricity"
+      }
+    },
+    "sanctuary": {
+      "id": "realm-07",
+      "name": "The Sanctuary",
+      "subtitle": "Inner Peace Chamber",
+      "theme": "healing-integration",
+      "geometry": "sacred-cocoon",
+      "codexNodes": ["C144N-001", "C144N-003", "C144N-005"],
+      "characters": ["healer", "integrator", "peace-weaver"],
+      "artifacts": ["healing-crystals", "integration-altar", "peace-mandala"],
+      "description": "A safe space for healing, integration, and peaceful reflection",
+      "entryPoint": "Rest and integrate your experiences in sacred safety",
+      "modHooks": [
+        "add-healing-tools",
+        "modify-environment",
+        "enhance-safety",
+        "add-support-systems"
+      ],
+      "navigation": {
+        "exits": ["nave", "chapel", "library"],
+        "entrances": ["all-connected"]
+      },
+      "atmosphere": {
+        "lighting": "soft-healing",
+        "sound": "gentle-waves",
+        "scent": "lavender-peace"
+      }
+    }
+  },
+  "realmConnections": {
+    "frontispiece": {
+      "leadsTo": ["nave", "chapel", "library"],
+      "requirements": ["threshold-crossing"]
+    },
+    "nave": {
+      "leadsTo": ["frontispiece", "double-tree", "sanctuary"],
+      "requirements": ["sacred-space-respect"]
+    },
+    "double-tree": {
+      "leadsTo": ["all-connected"],
+      "requirements": ["tree-climbing"]
+    }
+  }
+}
