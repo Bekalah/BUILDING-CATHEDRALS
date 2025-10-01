@@ -1,0 +1,94 @@
+<!doctype html><meta charset="utf-8"/><title>Cathedral Reference</title><link rel="stylesheet" href="./style.css"/><body><p><h1>🔧 Stone Grimoire — Dev Handoff (Repo-Aware)</h1>
+
+<h2>0) Non-negotiables (keep these intact)</h2>
+- **ND-safe by design:** no autoplay audio, gentle fades, no strobe, volume caps.  
+- **Museum-grade feel:** illuminated parchment UI, plaques, provenance blocks.  
+- **Open-world:** no locks/gates; all labs/realms are directly reachable.  
+- **Root-relative asset paths** for shared CSS/JS (`/assets/...`) to avoid nested path breakage across `/`, `/chapels/`, `/main/`, etc.  </p><p>---
+
+<h2>1) What’s already in repo and must remain</h2>
+**Data**
+- `assets/data/stylepacks.json` (curated packs; provenance header; ND-safe palettes)  
+- `assets/data/angels72.json` (full 72: sign/segment/decan/ruler/element/stylepack/toneHz/pattern)  </p><p>**Pages (examples the user mentioned)**
+- Root: `index.html`, `cathedral.html`, `angels72.html`  
+- Chapels/labs (open-world):  
+  - `chapels/angel-lab.html`, `chapels/angel-cubes.html`, `chapels/musical-cubes.html`, `chapels/cubes-visual-lab.html`  
+  - `chapels/apprentice-pillar.html`, `chapels/jacobs-ladder.html`, `chapels/helix-totem.html`  
+  - `chapels/crypt.html`, `chapels/lady-chapel.html`  
+  - `chapels/crystal-grid.html`, `chapels/crystal-pavilion.html`  
+  - `chapels/respawn-gate.html`  </p><p>**CSS**
+- `assets/css/palette.css`  
+- `assets/css/light.css` (plaque / ritual / overlays)  
+- `assets/css/dark.css` (new, supports theme toggle)  </p><p>**JS (engines + utilities)**
+- `assets/js/theme.js` ✅ UPDATED — light/dark toggle + inject button  
+- `assets/js/engines/ambient-engine.js` ✅ ND-safe audio  
+- `assets/js/engines/cymatic-engine.js` ✅ unified ASCII-safe module  
+- Other helpers stay as-is  </p><p>**Navigation**
+- Footer/nav blocks point back to `../cathedral.html` and other labs.  </p><p>---
+
+<h2>2) What we changed right now</h2>
+- **Theme system**:  
+  - `<link id="theme-css" rel="stylesheet" href="/assets/css/light.css">`  
+  - `<script src="/assets/js/theme.js" defer></script>`  
+  - Handles light/dark swap + localStorage; button injected into `.c99-ritual`.  
+- **Cymatics engine**:  
+  - Canonical at `assets/js/engines/cymatic-engine.js`.  
+  - Mount with:  
+    <pre><code>html
+    &lt;canvas id="cymatics">&lt;/canvas>
+    &lt;script type="module">
+      import { mountCymaticsCanvas } from "/assets/js/engines/cymatic-engine.js";
+      window.addEventListener("DOMContentLoaded", () => 
+        mountCymaticsCanvas("#cymatics"));
+    &lt;/script></code></pre>
+
+---
+
+<h2>3) Known repo quirks to fix</h2>
+- **Duplicate dirs** (e.g. `Folios/` vs `folios/`) → keep lowercase, update links.  
+- **Old ambient engine copy** (`js/audio/ambient-engine.js`) → keep only `assets/js/engines/ambient-engine.js`.  
+- **Root-relative assets** → replace `../assets/...` with `/assets/...` globally.  </p><p>---
+
+<h2>4) Planetary light & stained-glass overlay (planned)</h2>
+- Implement `assets/js/planetary-light.js` later.  
+- Gently shift cathedral tint by planetary hour (`--planet-glow` CSS var).  
+- Used in `.overlay-vitrail`.  </p><p>---
+
+<h2>5) Angels Ladder (grid)</h2>
+- Data: `assets/data/angels72.json`.  
+- Page: `angels72.html`. On click:  
+  - Apply angel’s `stylepack`.  
+  - Call `setToneHz(angel.toneHz)`.  
+  - Update plaque with details.  
+- ND-safe: audio only on user tap.  </p><p>---
+
+<h2>6) Labs wiring</h2>
+- **Angel Cubes Lab**: 12 ratios → tones → angels → plaque.  
+- **Crystal Grid**: crystals = tone+stylepack, tap to lay glowing grid.  
+- **Helix Totem / Jacob’s Ladder**: 72-step climb → tone+color glide.  
+- **Save Art MVP**: add *Export PNG* of current canvas (filename = angel+timestamp).  </p><p>---
+
+<h2>7) Accessibility guardrails</h2>
+- Respect `prefers-reduced-motion`.  
+- No autoplay; first tap resumes audio.  
+- Global volume cap.  
+- Provide *Quietus* button.  
+- Plaques have ARIA role="note".  </p><p>---
+
+<h2>8) Verification steps</h2>
+1. Open `/index.html` + `/cathedral.html` → theme toggle works.  
+2. Open `/angels72.html` → click = tone + skin + plaque update.  
+3. Test chapels (`angel-cubes.html`, `crystal-grid.html`) → ND-safe interactions.  
+4. Check no uppercase folder references.  </p><p>---
+
+<h2>9) What not to change</h2>
+- Don’t re-add relative paths for shared CSS/JS.  
+- Don’t enable autoplay or strobe.  
+- Don’t gate pages behind unlocks.  </p><p>---
+
+<h2>10) Stretch goals</h2>
+- Add style engine shim → map `stylepacks.json` → CSS vars.  
+- Add planetary-light after theme is stable.  </p><p>---
+
+<h3>One-line summary</h3>
+	> Keep ND-safe, museum-grade, open-world. Theme swap standardized, cymatic engine unified, angels72/stylepacks data in place. Fix duplicate folders + paths, defer planetary light. No autoplay; all must work on iPad Safari.</p></body>
