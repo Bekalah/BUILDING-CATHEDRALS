@@ -1,0 +1,82 @@
+{
+  "workspace_name": "cathedral-development-staging",
+  "deployment_target": {
+    "main_website": "https://bekalah.github.io/cathedral/",
+    "production_repo": "Bekalah/cathedral",
+    "staging_workspace": "BUILDING CATHEDRALS",
+    "technology_stack": {
+      "framework": "Vite + React + Three.js",
+      "never_use": ["flat HTML", "SVG-only", "static sites"],
+      "always_use": ["interactive 3D", "modular components", "ND-safe design"]
+    }
+  },
+  "ai_services": {
+    "azure_foundry": {
+      "subscription_id": "88235353-b821-4046-9457-89f70c3d8e9e",
+      "region": "East US",
+      "recommended_models": {
+        "coding": ["gpt-4o", "gpt-4o-mini", "codex-mini"],
+        "reasoning": ["DeepSeek-R1", "o1-mini", "Phi-4-reasoning"],
+        "multimodal": ["gpt-4o", "Phi-4-multimodal-instruct"],
+        "image_generation": ["dall-e-3", "Stable-Diffusion-3.5-Large"]
+      }
+    },
+    "github_copilot": {
+      "status": "pro_enabled",
+      "features": ["chat", "code_completion", "code_explanation"]
+    }
+  },
+  "development_workflow": {
+    "staging_area": "/Users/rebeccalemke/Library/Mobile Documents/com~apple~CloudDocs/BUILDING CATHEDRALS",
+    "build_system": "Vite",
+    "target_framework": "React with Three.js",
+    "deployment_pipeline": {
+      "1_develop": "BUILDING CATHEDRALS workspace",
+      "2_build": "npm run build (Vite)",
+      "3_deploy": "Push to production repos",
+      "4_live": "GitHub Pages at bekalah.github.io/cathedral"
+    }
+  },
+  "repository_connections": {
+    "primary_cathedral_site": {
+      "repo": "Bekalah/cathedral",
+      "purpose": "Main cathedral website",
+      "deployment": "GitHub Pages",
+      "source_sync": "building_cathedrals/dist → cathedral/docs"
+    },
+    "supporting_repos": {
+      "cathedral_technical": "Bekalah/cathedral-technical",
+      "cathedral_research": "Bekalah/cathedral-research",
+      "cathedral_docs": "Bekalah/cathedral-docs",
+      "building_cathedrals_staging": "Bekalah/BUILDING-CATHEDRALS"
+    },
+    "specialized_components": {
+      "codex_14499": "Bekalah/codex-14499",
+      "liber_arcanae": "Bekalah/liber-arcanae",
+      "circuitum99": "Bekalah/circuitum99"
+    }
+  },
+  "build_requirements": {
+    "never_flat": true,
+    "never_svg_only": true,
+    "always_interactive_3d": true,
+    "framework_requirements": [
+      "Vite build system",
+      "React components",
+      "Three.js for 3D",
+      "ND-safe interactions",
+      "Modular architecture"
+    ]
+  },
+  "sync_strategy": {
+    "direction": "BUILDING CATHEDRALS → Production Repos",
+    "trigger": "Manual deploy command",
+    "build_first": true,
+    "targets": [
+      "cathedral main site",
+      "technical implementations",
+      "research updates",
+      "documentation"
+    ]
+  }
+}
