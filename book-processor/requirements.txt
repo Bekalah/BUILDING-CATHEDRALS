@@ -1,6 +1,6 @@
 PyPDF2==3.0.1
 pdfplumber==0.10.3
-nltk==3.8.1
+nltk==3.9
 sqlite3
 flask==3.0.0
 whoosh==2.7.4
