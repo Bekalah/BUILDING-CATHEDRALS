@@ -3,12 +3,22 @@
 ## Overview
 This repository implements the Cathedral of Circuits system, a trauma-aware, ND-safe, modular, and accessible art/game/research engine. It is organized as a monorepo with apps, shared packages, and strict standards for accessibility, ND-safety, and modularity.
 
-## Structure
-- `apps/` — Main applications (e.g., liber-arcanae, stone-grimoire, circuitum99, cosmogenesis)
-- `packages/` — Shared code (hooks, UI, fractals, synths, data models, palettes)
-- `docs/` — Documentation, standards, guides, architecture
-- `scripts/` — Automation scripts (build, deploy, lint, etc.)
-- `.github/` — CI/CD workflows for GitHub & Azure
+## Repository Structure
+
+### Main Repository (BUILDING-CATHEDRALS)
+- `apps/` — Main applications (arcanae-lab, cathedral-of-circuits, stone-grimoire)
+- `packages/` — Shared code (hooks, sound-kernel, UI components)
+- `src/` — Core application source code
+- `public/` — Static assets and exported sites
+- `exports/` — Generated sites and artifacts
+
+### Separate Specialized Repositories
+- **[cathedral-research](https://github.com/Bekalah/cathedral-research)** — Research materials, papers, and experimental code
+- **[cathedral-technical](https://github.com/Bekalah/cathedral-technical)** — Technical components, engines, scripts, and processors
+- **[cathedral-docs](https://github.com/Bekalah/cathedral-docs)** — Documentation, instructions, and guides
+
+### CI/CD
+- `.github/` — GitHub Actions workflows for deployment to GitHub Pages & Azure
 
 ## Key Standards
 - **ND-Safe & Trauma-Aware:** All motion and sound respects user settings and ND-safety. Color palettes are ND-safe. No strobe or harsh transitions.
