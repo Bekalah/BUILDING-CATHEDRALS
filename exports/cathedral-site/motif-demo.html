@@ -1,0 +1,10 @@
+<!doctype html><meta charset=
+"utf-8"/><title>Cathedral Motif Demo</title><link rel="stylesheet" href="./style.css"/><body><h1>Motif Demo</h1><p>Lightweight in-browser audition of motif palette mappings. Uses basic Web Audio envelopes (no Tone.js dependency).<br/>Source integrity hashes are in <code>reference-manifest.json</code>.</p><div id="controls"></div><pre id="info"></pre><script type="module">
+import { loadReference } from './loader.js';
+const noteFreq = n=>{const m=n.match(/^(?<note>[A-Ga-g])(?<acc>#|b)?(?<oct>d)$/);if(!m)return 440;const semis={'C':0,'D':2,'E':4,'F':5,'G':7,'A':9,'B':11};let s=semis[m.groups.note.toUpperCase()];if(m.groups.acc==='#')s+=1;else if(m.groups.acc==='b')s-=1;const oct=parseInt(m.groups.oct,10);const midi = (oct+1)*12 + s;return 440 * Math.pow(2,(midi-69)/12);};
+const actx = new (window.AudioContext||window.webkitAudioContext)();
+function playPalette(palette){const now=actx.currentTime;palette.slice(0,3).forEach((id,i)=>{const osc=actx.createOscillator();const gain=actx.createGain();let baseFreq=220 + (i*70); if(/^[A-G]/i.test(id)) { baseFreq = noteFreq(id.replace(/[^A-G#b0-9]/gi,'')) || baseFreq; } osc.frequency.value=baseFreq; osc.type='sine'; gain.gain.setValueAtTime(0,now); gain.gain.linearRampToValueAtTime(0.3, now+0.05); gain.gain.exponentialRampToValueAtTime(0.0001, now+1.8); osc.connect(gain).connect(actx.destination); osc.start(now); osc.stop(now+2);});}
+const { manifest, audioMap } = await loadReference('.');
+const c=document.getElementById('controls');
+if(!audioMap){c.textContent='No audio-map.json present.';} else { audioMap.motifs.forEach(m=>{ const btn=document.createElement('button'); btn.textContent=m.id + ' ['+ (m.palette||m.layers||[]).slice(0,3).join(',') +']'; btn.style.margin='4px'; btn.onclick=()=>{ playPalette(m.palette||m.layers||[]); document.getElementById('info').textContent=JSON.stringify(m,null,2); }; c.appendChild(btn); }); }
+</script>

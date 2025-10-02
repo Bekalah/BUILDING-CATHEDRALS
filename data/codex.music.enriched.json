@@ -17,13 +17,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -50,13 +49,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -83,13 +81,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -116,13 +113,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -150,12 +146,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -182,13 +177,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -216,12 +210,11 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -249,12 +242,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -281,13 +273,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -314,13 +305,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -347,13 +337,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -380,13 +369,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -413,13 +401,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -447,17 +434,16 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -479,13 +465,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -513,17 +498,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -546,12 +530,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -578,13 +561,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -611,13 +593,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -644,13 +625,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -677,18 +657,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
         "pulse": false,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -710,13 +689,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -744,12 +722,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -776,13 +753,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -810,17 +786,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -843,12 +818,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -875,13 +849,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -908,18 +881,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -941,13 +913,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -974,13 +945,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -1007,13 +977,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -1041,12 +1010,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -1073,13 +1041,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -1107,17 +1074,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -1140,17 +1106,16 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
         "pulse": true,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -1172,13 +1137,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -1205,13 +1169,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -1238,13 +1201,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -1271,13 +1233,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -1304,13 +1265,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -1338,12 +1298,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -1370,18 +1329,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
         "pulse": true,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -1404,17 +1362,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -1437,12 +1394,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -1469,13 +1425,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -1502,13 +1457,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -1535,13 +1489,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -1568,13 +1521,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -1601,18 +1553,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
         "pulse": true,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -1635,12 +1586,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -1667,13 +1617,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -1701,17 +1650,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -1734,12 +1682,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -1766,13 +1713,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -1799,13 +1745,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -1832,18 +1777,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": true,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -1865,13 +1809,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -1898,13 +1841,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -1932,12 +1874,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -1964,13 +1905,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -1998,17 +1938,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -2031,12 +1970,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -2063,18 +2001,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
         "pulse": false,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -2096,13 +2033,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -2129,13 +2065,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -2162,13 +2097,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -2195,13 +2129,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -2229,12 +2162,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -2261,13 +2193,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -2295,12 +2226,11 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -2328,12 +2258,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -2360,13 +2289,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -2393,13 +2321,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -2426,13 +2353,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -2459,13 +2385,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -2492,13 +2417,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -2526,17 +2450,16 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -2558,13 +2481,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -2592,17 +2514,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -2625,12 +2546,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -2657,13 +2577,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -2690,13 +2609,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -2723,13 +2641,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -2756,18 +2673,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
         "pulse": false,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -2789,13 +2705,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -2823,12 +2738,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -2855,13 +2769,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -2889,17 +2802,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -2922,12 +2834,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -2954,13 +2865,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -2987,18 +2897,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -3020,13 +2929,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -3053,13 +2961,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -3086,13 +2993,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -3120,12 +3026,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -3152,13 +3057,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -3186,17 +3090,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -3219,17 +3122,16 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
         "pulse": true,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -3251,13 +3153,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -3284,13 +3185,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -3317,13 +3217,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -3350,13 +3249,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -3383,13 +3281,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -3417,12 +3314,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -3449,18 +3345,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
         "pulse": true,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -3483,17 +3378,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -3516,12 +3410,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -3548,13 +3441,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -3581,13 +3473,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -3614,13 +3505,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -3647,13 +3537,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -3680,18 +3569,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
         "pulse": true,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -3714,12 +3602,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -3746,13 +3633,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -3780,17 +3666,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -3813,12 +3698,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -3845,13 +3729,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -3878,13 +3761,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -3911,18 +3793,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": true,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -3944,13 +3825,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -3977,13 +3857,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -4011,12 +3890,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -4043,13 +3921,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -4077,17 +3954,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -4110,12 +3986,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -4142,18 +4017,17 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
         "pulse": false,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -4175,13 +4049,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -4208,13 +4081,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -4241,13 +4113,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -4274,13 +4145,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -4308,12 +4178,11 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
@@ -4340,13 +4209,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -4374,12 +4242,11 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -4407,12 +4274,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -4439,13 +4305,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,
@@ -4472,13 +4337,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 1,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 2,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": false,
@@ -4505,13 +4369,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 2,
-      "mode": "phrygian",
+      "motif": "threshold-heart",
+      "energy_hint": 3,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
@@ -4538,13 +4401,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "threshold-heart",
-      "energy_hint": 3,
-      "mode": "lydian",
+      "motif": "fractal-fire",
+      "energy_hint": 4,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": true,
@@ -4571,13 +4433,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "fractal-fire",
-      "energy_hint": 4,
+      "motif": "crystal-gate",
+      "energy_hint": 5,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": false,
@@ -4605,17 +4466,16 @@
     "notes": "",
     "music": {
       "motif": "primordial-seed",
-      "energy_hint": 5,
+      "energy_hint": 6,
       "mode": "aeolian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "soft_pad",
+        "low_drone"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": true
+        "fractalLayer": false
       }
     }
   },
@@ -4637,13 +4497,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "ascend-spiral",
-      "energy_hint": 6,
-      "mode": "dorian",
+      "motif": "ascending-veil",
+      "energy_hint": 7,
+      "mode": "lydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "shimmer_choir"
       ],
       "adaptive": {
         "rise": true,
@@ -4671,17 +4530,16 @@
     "notes": "",
     "music": {
       "motif": "threshold-heart",
-      "energy_hint": 7,
-      "mode": "phrygian",
+      "energy_hint": 8,
+      "mode": "dorian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "warm_strings",
+        "pulse_bass"
       ],
       "adaptive": {
         "rise": false,
         "pulse": false,
-        "fractalLayer": false
+        "fractalLayer": true
       }
     }
   },
@@ -4704,12 +4562,11 @@
     "notes": "",
     "music": {
       "motif": "fractal-fire",
-      "energy_hint": 8,
-      "mode": "lydian",
+      "energy_hint": 9,
+      "mode": "phrygian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "granular_sparks",
+        "resonant_perc"
       ],
       "adaptive": {
         "rise": false,
@@ -4736,13 +4593,12 @@
     "daemon_guardian": "placeholder",
     "notes": "",
     "music": {
-      "motif": "primordial-seed",
-      "energy_hint": 9,
+      "motif": "crystal-gate",
+      "energy_hint": 1,
       "mode": "mixolydian",
       "instrumentation_tags": [
-        "pad",
-        "texture",
-        "safety"
+        "bell_glass",
+        "soft_pad"
       ],
       "adaptive": {
         "rise": true,

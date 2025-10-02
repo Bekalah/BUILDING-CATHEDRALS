@@ -1,0 +1,16 @@
+{
+  "$schema": "internal/tarot-audio-profiles.schema.json",
+  "version": 1,
+  "profiles": [
+    { "tarot": "Fool", "solfeggioHz": 396, "beatPattern": "kick- - snare - |kick- - snare -", "synthPreset": "air_pad", "motifBias": "ascending-veil" },
+    { "tarot": "Magician", "solfeggioHz": 417, "beatPattern": "kick-hh-sn-hh|kick-hh-sn-hh", "synthPreset": "spark_arps", "motifBias": "crystal-gate" },
+    { "tarot": "High Priestess", "solfeggioHz": 528, "beatPattern": "-hh- -hh- -hh- -hh", "synthPreset": "choir_glass", "motifBias": "primordial-seed" },
+    { "tarot": "Empress", "solfeggioHz": 639, "beatPattern": "kick--sn--|kick--sn--", "synthPreset": "warm_strings", "motifBias": "threshold-heart" },
+    { "tarot": "Emperor", "solfeggioHz": 741, "beatPattern": "kick--sn-k|kick--sn-k", "synthPreset": "mono_pulse", "motifBias": "threshold-heart" },
+    { "tarot": "Hierophant", "solfeggioHz": 852, "beatPattern": "k-hh-sn-hh|k-hh-sn-hh", "synthPreset": "harmonic_bells", "motifBias": "crystal-gate" },
+    { "tarot": "Lovers", "solfeggioHz": 963, "beatPattern": "kick . sn . | . . sn .", "synthPreset": "dual_pad", "motifBias": "ascending-veil" },
+    { "tarot": "Chariot", "solfeggioHz": 285, "beatPattern": "k--k-sn-k|k--k-sn-k", "synthPreset": "drive_seq", "motifBias": "fractal-fire" },
+    { "tarot": "Strength", "solfeggioHz": 174, "beatPattern": "k---sn---|k---sn---", "synthPreset": "low_drone", "motifBias": "threshold-heart" },
+    { "tarot": "Hermit", "solfeggioHz": 432, "beatPattern": "- - sn - | - - - -", "synthPreset": "solo_flute", "motifBias": "primordial-seed" }
+  ]
+}

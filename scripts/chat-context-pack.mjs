@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Bundle a reduced chat context pack for AI assistants.
+// Build reduced chat context pack for assistants.
 import fs from 'fs';
 import path from 'path';
 const root = process.cwd();
@@ -7,12 +7,15 @@ const docs = path.join(root,'docs');
 const outDir = path.join(root,'dist');
 if(!fs.existsSync(outDir)) fs.mkdirSync(outDir,{recursive:true});
 
-function collect(dir, limit=5){
+function collect(dir, limit=8){
   if(!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir).filter(f=>/\.(md|txt)$/i.test(f)).slice(0,limit).map(f=>{
-    const full = path.join(dir,f);
-    return { file: path.relative(root, full), content: fs.readFileSync(full,'utf8').slice(0,8000) };
-  });
+  return fs.readdirSync(dir)
+    .filter(f=>/\.(md|txt)$/i.test(f))
+    .slice(0,limit)
+    .map(f=>{
+      const full = path.join(dir,f);
+      return { file: path.relative(root, full), content: fs.readFileSync(full,'utf8').slice(0,8000) };
+    });
 }
 
 const pack = {
@@ -24,4 +27,4 @@ const pack = {
 };
 const outFile = path.join(outDir,'chat-pack.json');
 fs.writeFileSync(outFile, JSON.stringify(pack,null,2));
-console.log('Chat context pack written to', outFile);
+console.log('[chat-pack] wrote', outFile);

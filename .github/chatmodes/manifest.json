@@ -1,9 +1,10 @@
 {
   "modes": [
-    { "id": "cathedral", "file": "cathedral.chatmode.md", "purpose": "General creative + architectural guidance." },
-    { "id": "librarian", "file": "librarian.chatmode.md", "purpose": "Precise retrieval and citation." },
-    { "id": "composer", "file": "composer.chatmode.md", "purpose": "Motif and adaptive music design." },
-    { "id": "healer", "file": "healer.chatmode.md", "purpose": "ND-safe reflective rephrasing." }
+    { "id": "cathedral", "file": "cathedral.chatmode.md", "description": "Unified creative + codex + music + ND-safe guidance" },
+    { "id": "librarian", "file": "librarian.chatmode.md", "description": "Archival, provenance-first, no creative expansion" },
+    { "id": "composer", "file": "composer.chatmode.md", "description": "Music & motif system design for codex nodes" },
+    { "id": "healer", "file": "healer.chatmode.md", "description": "Gentle narrative modulation & grounding suggestions" }
   ],
-  "generated": "${ISO_TIMESTAMP}"
+  "generated": "2025-10-02T00:00:00Z",
+  "schemaVersion": 1
 }

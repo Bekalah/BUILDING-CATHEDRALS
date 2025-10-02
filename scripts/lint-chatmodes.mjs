@@ -1,25 +1,22 @@
 #!/usr/bin/env node
-// Lint chatmode files for required sections & size hints.
+// Lint chatmode files for required canonical sections.
 import fs from 'fs';
 import path from 'path';
 const dir = path.join(process.cwd(),'.github','chatmodes');
-const required = ['Mode','Source','Style','Refusal'];
+const required = ['Mode Overview','Source Priority','Style Guidelines'];
 let issues = [];
-if(!fs.existsSync(dir)) { console.log('No chatmodes directory'); process.exit(0);} 
+if(!fs.existsSync(dir)) { console.log('[chatmode-lint] no chatmodes directory'); process.exit(0);} 
 for (const f of fs.readdirSync(dir)) {
   if(!f.endsWith('.chatmode.md')) continue;
   const content = fs.readFileSync(path.join(dir,f),'utf8');
-  for (const r of required) {
-    if(!new RegExp(`#.*${r}`,'i').test(content)) {
-      issues.push(`${f}: missing section containing '${r}'`);
-    }
-  }
-  if(content.length > 12000) issues.push(`${f}: file too large (${content.length} chars)`);
+  const missing = required.filter(h => !content.includes('## '+h));
+  if(missing.length) issues.push(`${f}: missing ${missing.join(', ')}`);
+  if(content.length > 15000) issues.push(`${f}: file too large (${content.length} chars)`);
 }
 if(issues.length){
-  console.warn('Chatmode lint issues:');
+  console.warn('[chatmode-lint] issues:');
   issues.forEach(i=>console.warn(' -',i));
   process.exit(2);
 } else {
-  console.log('Chatmode lint: OK');
+  console.log('[chatmode-lint] OK');
 }

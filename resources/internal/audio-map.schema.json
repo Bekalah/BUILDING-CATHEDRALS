@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "internal/audio-map.schema.json",
+  "title": "Cathedral Audio Motif Map",
+  "type": "object",
+  "required": ["version", "motifs", "instrumentPalettes"],
+  "properties": {
+    "version": {"type": "integer", "minimum": 1},
+    "generated": {"type": "string", "format": "date-time"},
+    "motifs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "energy", "mode", "palette"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "family": {"type": "string"},
+          "energy": {"type": "array", "items": {"type": "integer"}, "minItems": 2, "maxItems": 2},
+            "mode": {"type": "string"},
+          "palette": {"type": "array", "items": {"type": "string"}},
+          "layers": {"type": "array", "items": {"type": "string"}},
+          "description": {"type": "string"},
+          "safety": {"type": "boolean"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "instrumentPalettes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "type": {"type": "string"},
+          "env": {"type": "string"},
+          "notes": {"type": "array", "items": {"type": "string"}},
+          "layer": {"type": ["integer", "string"]},
+          "attack": {"type": ["number", "string"]},
+          "pattern": {"type": "string"},
+          "texture": {"type": "string"},
+          "density": {"type": ["number", "string"]},
+          "accent": {"type": ["string", "number"]},
+          "bow": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

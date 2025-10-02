@@ -1,5 +1,7 @@
 {
-  "generated": "2025-10-02T00:04:37.561Z",
+  "generated": "2025-10-02T00:35:53.546Z",
+  "loader": "loader.js",
+  "demo": "motif-demo.html",
   "instructions": [
     {
       "file": "CATHEDRAL_SCROLL_FULL.md",
@@ -59,5 +61,63 @@
   ],
   "codexTemplate": "codex/codex_144_nodes_template.json",
   "audioMap": "audio-map.json",
-  "loader": "loader.js"
+  "integrity": {
+    "instructions": [
+      {
+        "file": "CATHEDRAL_SCROLL_FULL.md",
+        "hash": "d988af27d2927eb7"
+      },
+      {
+        "file": "CATHEDRAL_SCROLL_PART1.md",
+        "hash": "2fbf8323b934d755"
+      },
+      {
+        "file": "CATHEDRAL_SCROLL_PART2.md",
+        "hash": "84f83400eca564c3"
+      },
+      {
+        "file": "CATHEDRAL_SCROLL_PART3.md",
+        "hash": "e211ead136ada226"
+      },
+      {
+        "file": "CODEX_144:99_Canonical_Seed_Instructions",
+        "hash": "5ef9270b37b549f8"
+      },
+      {
+        "file": "Cathedral_Instructions_Set_2",
+        "hash": "72a25230f4b91a19"
+      },
+      {
+        "file": "Cathedral_Instructions_Set_3_-_Contributors",
+        "hash": "f5ea59a21fc78107"
+      },
+      {
+        "file": "Cathedral_Instructrions",
+        "hash": "725c52a5a5a5ec26"
+      },
+      {
+        "file": "HELPFUL_REPO_STRUCTURE_INSTRUCTIONS",
+        "hash": "bd13058d3f4c05cb"
+      }
+    ],
+    "engines": [
+      {
+        "name": "ambient-engine.js",
+        "hash": "5858a0c02f290d04"
+      },
+      {
+        "name": "cymatic-engine.js",
+        "hash": "8f74ff4c92b8bfbd"
+      }
+    ],
+    "audioMap": {
+      "file": "audio-map.json",
+      "hash": "2e94e11a27ef3399"
+    },
+    "codexTemplate": {
+      "file": "codex_144_nodes_template.json",
+      "hash": "c67726522cef7832"
+    }
+  },
+  "rootHash": "a893013ed0bbb323"
 }
