@@ -1,21 +1,65 @@
 {
 	"folders": [
 		{
-			"path": "../BOOKS"
-		},
-		{
+			"name": "BUILDING-CATHEDRALS (Main)",
 			"path": "."
 		},
 		{
-			"path": "../../../../Downloads/Sunday-cathedral"
+			"name": "cathedral-research",
+			"path": "../cathedral-research"
+		},
+		{
+			"name": "cathedral-technical",
+			"path": "../cathedral-technical"
+		},
+		{
+			"name": "cathedral-docs",
+			"path": "../cathedral-docs"
 		}
 	],
 	"settings": {
-		"editor.formatOnSave": true
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit"
+		},
+		"emmet.includeLanguages": {
+			"javascript": "javascriptreact",
+			"typescript": "typescriptreact"
+		},
+		"files.associations": {
+			"*.js": "javascript",
+			"*.jsx": "javascriptreact",
+			"*.ts": "typescript",
+			"*.tsx": "typescriptreact"
+		},
+		"git.autofetch": true,
+		"git.confirmSync": false,
+		"azure.resourceGroups": [
+			{
+				"name": "cathedral-rg",
+				"subscriptionId": "your-subscription-id"
+			}
+		]
 	},
 	"extensions": {
 		"recommendations": [
-			"denoland.vscode-deno"
+			"ms-vscode.vscode-typescript-next",
+			"esbenp.prettier-vscode",
+			"dbaeumer.vscode-eslint",
+			"ms-vscode.vscode-json",
+			"ms-vscode.azure-account",
+			"ms-vscode.azurecli",
+			"ms-vscode.vscode-nodejs",
+			"github.copilot",
+			"github.copilot-chat",
+			"ms-vscode.vscode-github-pull-request",
+			"ms-vscode-remote.remote-containers",
+			"formulahendry.auto-rename-tag",
+			"christian-kohler.path-intellisense",
+			"ms-vscode.vscode-css-peek",
+			"zignd.html-css-class-completion",
+			"ms-vscode.js-debug"
 		]
 	}
 }
