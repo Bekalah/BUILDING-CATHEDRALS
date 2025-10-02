@@ -7,5 +7,7 @@
 			"path": "../../../book-processor"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BUILDING CATHEDRALS"
+	}
 }
