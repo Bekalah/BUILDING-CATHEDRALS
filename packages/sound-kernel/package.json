@@ -1,0 +1,8 @@
+{
+  "name": "@cathedral/sound-kernel",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.js",
+  "description": "Lightweight adaptive audio motif kernel for Cathedral / Codex bindings.",
+  "license": "MIT"
+}

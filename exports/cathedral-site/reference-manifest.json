@@ -1,5 +1,5 @@
 {
-  "generated": "2025-10-01T23:53:18.792Z",
+  "generated": "2025-10-02T00:04:37.561Z",
   "instructions": [
     {
       "file": "CATHEDRAL_SCROLL_FULL.md",
@@ -57,5 +57,7 @@
       "hash": "8f74ff4c92b8bfbd"
     }
   ],
-  "codexTemplate": "codex/codex_144_nodes_template.json"
+  "codexTemplate": "codex/codex_144_nodes_template.json",
+  "audioMap": "audio-map.json",
+  "loader": "loader.js"
 }

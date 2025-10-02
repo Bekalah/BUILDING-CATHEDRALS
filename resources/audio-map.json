@@ -1,0 +1,45 @@
+{
+  "$schema": "internal/audio-map.schema.json",
+  "version": 1,
+  "generated": "PLACEHOLDER_RUNTIME_UPDATE",
+  "motifs": [
+    {
+      "id": "primordial-seed",
+      "energy": [0,2],
+      "mode": "aeolian",
+      "palette": ["soft_pad","low_drone"],
+      "description": "Foundational quiet field; establishes safety and grounding."
+    },
+    {
+      "id": "ascend-spiral",
+      "energy": [3,5],
+      "mode": "lydian",
+      "palette": ["bell_glass","shimmer_choir"],
+      "description": "Airy upward movement indicating narrative expansion."
+    },
+    {
+      "id": "threshold-heart",
+      "energy": [4,7],
+      "mode": "dorian",
+      "palette": ["warm_strings","pulse_bass"],
+      "description": "Balanced tension before transformation; heart center resonance."
+    },
+    {
+      "id": "fractal-fire",
+      "energy": [6,9],
+      "mode": "phrygian",
+      "palette": ["granular_sparks","resonant_perc"],
+      "description": "High activation fractal ignition; climax or revelation."
+    }
+  ],
+  "instrumentPalettes": {
+    "soft_pad": {"type": "synth", "env": "slow", "notes": ["A2","E3","B3"]},
+    "low_drone": {"type": "drone", "layer": 1},
+    "bell_glass": {"type": "fm", "attack": 0.01, "notes": ["C4","G4","D5"]},
+    "shimmer_choir": {"type": "granular", "texture": "airy"},
+    "warm_strings": {"type": "ensemble", "bow": "soft"},
+    "pulse_bass": {"type": "mono", "pattern": "pulse-quarters"},
+    "granular_sparks": {"type": "granular", "density": 0.4},
+    "resonant_perc": {"type": "percussion", "accent": "medium"}
+  }
+}

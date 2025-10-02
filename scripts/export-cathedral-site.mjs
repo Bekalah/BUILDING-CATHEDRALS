@@ -75,7 +75,7 @@ for (const c of codexTemplateCandidates) {
   }
 }
 
-// Copy engine prototype scripts (ambient & cymatic if present)
+// Copy engine prototype scripts (ambient & cymatic if present) + dynamic loader
 const engineNames = ['ambient-engine.js','cymatic-engine.js'];
 const outEngines = path.join(outRoot,'engines');
 ensureDir(outEngines);
@@ -102,12 +102,27 @@ fs.writeFileSync(path.join(outRoot,'style.css'), styleCss,'utf8');
 const portalHtml = `<!doctype html><meta charset="utf-8"/><title>Cathedral Reference Portal</title><link rel="stylesheet" href="./style.css"/><body><h1>Cathedral Reference Portal</h1><p>Generated static bundle for external site embedding. Source repository: BUILDING CATHEDRALS.</p><nav><ul><li><a href="index.html">Index</a></li><li><a href="instructions/">Instructions (raw listing)</a></li><li><a href="codex/${codexTemplateOut?path.basename(codexTemplateOut):''}">Codex Template</a></li></ul></nav><section><h2>Instruction Pages</h2><ul>${instructionEntries.map(e=>`<li><a href="instructions/${e.html}">${e.file}</a></li>`).join('')}</ul><h2>Engines</h2><ul>${engineEntries.map(e=>`<li><a href="engines/${e.name}">${e.name}</a></li>`).join('')}</ul></section></body>`;
 fs.writeFileSync(path.join(outRoot,'portal.html'), portalHtml,'utf8');
 
+// Copy audio map if present
+const audioMapSrc = path.join(root,'resources','audio-map.json');
+let audioMapEntry = null;
+if (fs.existsSync(audioMapSrc)) {
+  const dest = path.join(outRoot,'audio-map.json');
+  fs.copyFileSync(audioMapSrc,dest);
+  audioMapEntry = 'audio-map.json';
+}
+
+// Add loader module
+const loaderJs = `// Dynamic loader for Cathedral reference bundle\nexport async function loadReference(base='.') {\n  const manifest = await (await fetch(base + '/reference-manifest.json')).json();\n  let audioMap = null;\n  try { audioMap = await (await fetch(base + '/audio-map.json')).json(); } catch {}\n  return { manifest, audioMap };\n}\n`;
+fs.writeFileSync(path.join(outRoot,'loader.js'), loaderJs,'utf8');
+
 // Manifest
 const manifest = {
   generated: new Date().toISOString(),
   instructions: instructionEntries,
   engines: engineEntries,
-  codexTemplate: codexTemplateOut ? path.relative(outRoot,codexTemplateOut) : null
+  codexTemplate: codexTemplateOut ? path.relative(outRoot,codexTemplateOut) : null,
+  audioMap: audioMapEntry,
+  loader: 'loader.js'
 };
 fs.writeFileSync(path.join(outRoot,'reference-manifest.json'), JSON.stringify(manifest,null,2));
 

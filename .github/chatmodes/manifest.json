@@ -1,0 +1,9 @@
+{
+  "modes": [
+    { "id": "cathedral", "file": "cathedral.chatmode.md", "purpose": "General creative + architectural guidance." },
+    { "id": "librarian", "file": "librarian.chatmode.md", "purpose": "Precise retrieval and citation." },
+    { "id": "composer", "file": "composer.chatmode.md", "purpose": "Motif and adaptive music design." },
+    { "id": "healer", "file": "healer.chatmode.md", "purpose": "ND-safe reflective rephrasing." }
+  ],
+  "generated": "${ISO_TIMESTAMP}"
+}
