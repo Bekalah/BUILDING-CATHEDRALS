@@ -9,5 +9,10 @@
 	],
 	"settings": {
 		"liveServer.settings.multiRootWorkspaceName": "BUILDING CATHEDRALS"
+	},
+	"extensions": {
+		"recommendations": [
+			"teamsdevapp.vscode-ai-foundry"
+		]
 	}
 }
