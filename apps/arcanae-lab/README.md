@@ -1,3 +1,43 @@
+# ⊙ Arcanae Lab - arcanae-lab
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Arcanae Lab - arcanae-lab
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Arcanae Lab - arcanae-lab
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Arcanae Lab - arcanae-lab
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # Arcanae Lab
 
 A modular research and creative lab for archetypes, harmonic research, and symbolic synthesis. Styled with high fantasy and couture influences.

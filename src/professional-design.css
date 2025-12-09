@@ -1,0 +1,164 @@
+/* Professional Design System - Alchemical/Hermetic/Enochian Themed */
+
+:root {
+  /* Cosmic Backgrounds */
+  --color-cosmic-blue: #1a1a2e;
+  --color-deep-blue: #16213e;
+  --color-midnight-blue: #0f3460;
+  --color-mystical-purple: #6b46c1;
+  --color-vibrant-purple: #7c3aed;
+  
+  /* Luminous Golds */
+  --color-gold: #d4af37;
+  --color-light-gold: #c9a961;
+  --color-bronze: #b87333;
+  --color-bright-gold: #ffd700;
+  
+  /* Purity Whites */
+  --color-ivory: #ffffff;
+  --color-cream: #f5f5dc;
+  --color-off-white: #fffef0;
+  
+  /* Energy Colors */
+  --color-crimson: #dc143c;
+  --color-orange: #ff6b35;
+  --color-bright-orange: #ff8c42;
+  
+  /* Transformation Colors */
+  --color-teal: #00ced1;
+  --color-aqua: #40e0d0;
+  --color-sea-green: #20b2aa;
+  
+  /* Jewel Tones */
+  --color-jewel-purple: #9d4edd;
+  --color-jewel-pink: #ec4899;
+  --color-jewel-blue: #3b82f6;
+  
+  /* Typography */
+  --font-heading: 'Georgia', 'Times New Roman', serif;
+  --font-body: system-ui, -apple-system, sans-serif;
+  --font-code: 'Monaco', 'Courier New', monospace;
+  
+  /* Spacing (Fibonacci-based) */
+  --spacing-xs: 8px;
+  --spacing-sm: 13px;
+  --spacing-md: 21px;
+  --spacing-lg: 34px;
+  --spacing-xl: 55px;
+  
+  /* Effects */
+  --shadow-glow: 0 0 20px rgba(212, 175, 55, 0.3);
+  --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --transition: 300ms ease-in-out;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-cosmic-blue);
+  color: var(--color-off-white);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-gold);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: var(--spacing-md) 0;
+}
+
+/* Navigation with Golden Circuitry */
+.nav-menu {
+  background: var(--color-deep-blue);
+  border: 2px solid var(--color-gold);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-glow);
+}
+
+.nav-item {
+  color: var(--color-light-gold);
+  text-decoration: none;
+  padding: var(--spacing-sm);
+  display: block;
+  transition: var(--transition);
+  border-left: 3px solid transparent;
+}
+
+.nav-item:hover {
+  border-left-color: var(--color-gold);
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--color-bright-gold);
+}
+
+/* Cards with Parchment Effect */
+.card {
+  background: linear-gradient(135deg, var(--color-deep-blue) 0%, var(--color-midnight-blue) 100%);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn {
+  background: var(--color-gold);
+  color: var(--color-cosmic-blue);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn:hover {
+  background: var(--color-bright-gold);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-1px);
+}
+
+/* Golden Circuitry Pattern */
+.circuitry-pattern {
+  background-image: 
+    linear-gradient(90deg, var(--color-gold) 1px, transparent 1px),
+    linear-gradient(var(--color-gold) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+/* Glowing Effects */
+.glow {
+  box-shadow: 0 0 10px var(--color-gold), 0 0 20px var(--color-gold), 0 0 30px var(--color-gold);
+}
+
+/* Sacred Geometry */
+.hexagram {
+  width: 100px;
+  height: 100px;
+  background: var(--color-gold);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  opacity: 0.6;
+}

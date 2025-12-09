@@ -18,5 +18,10 @@
   },
   "devDependencies": {
     "vite": "^7.1.7"
+  },
+  "alchemical": {
+    "name": "Arcanae Lab",
+    "symbol": "⊙",
+    "label": "⊙ Arcanae Lab (arcanae-lab)"
   }
 }

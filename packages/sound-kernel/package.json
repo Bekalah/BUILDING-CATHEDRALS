@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "description": "Lightweight adaptive audio motif kernel for Cathedral / Codex bindings.",
-  "license": "MIT",
+  "license": "CC0-1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -12,5 +12,21 @@
   },
   "dependencies": {
     "tone": "^15.0.4"
-  }
+  },
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "alchemical": {
+    "name": "Sound Kernel",
+    "symbol": "⊙",
+    "label": "⊙ Sound Kernel (@cathedral/sound-kernel)"
+  },
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-12-04T22:13:14.378Z"
 }

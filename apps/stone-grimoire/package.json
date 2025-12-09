@@ -1,22 +1,24 @@
 {
   "name": "stone-grimoire",
   "version": "1.0.0",
-  "description": "Living archive and generative grimoire engine. Fantasy and high fashion inspired.",
-  "author": "Rebecca Lemke",
-  "license": "Copyright Rebecca Lemke, All Rights Reserved",
+  "license": "CC0-1.0",
+  "description": "",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "deploy:azure": "echo 'Deploy to Azure Static Web Apps'",
-    "deploy:github": "echo 'Deploy to GitHub Pages'",
-    "deploy:cloudflare": "echo 'Deploy to Cloudflare Pages'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-12-04T22:13:12.985Z",
+  "alchemical": {
+    "name": "Stone Grimoire",
+    "symbol": "⊙",
+    "label": "⊙ Stone Grimoire (stone-grimoire)"
   },
-  "devDependencies": {
-    "vite": "^7.1.7"
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": "*"
   }
 }

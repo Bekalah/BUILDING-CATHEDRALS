@@ -37,3 +37,11 @@ plaques-restore.zip
 # Output exports
 /dist-core/
 INTEGRITY_MANIFEST.json
+
+# Security
+.env.local
+.env.production
+*.pem
+*.key
+secrets/
+*.secret
