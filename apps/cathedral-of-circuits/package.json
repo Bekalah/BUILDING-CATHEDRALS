@@ -26,5 +26,6 @@
     "name": "Cathedral Of Circuits",
     "symbol": "⊙",
     "label": "⊙ Cathedral Of Circuits (cathedral-of-circuits)"
+    "vite": "^5.4.21"
   }
 }

@@ -23,5 +23,6 @@
     "name": "Arcanae Lab",
     "symbol": "⊙",
     "label": "⊙ Arcanae Lab (arcanae-lab)"
+    "vite": "^5.4.21"
   }
 }
